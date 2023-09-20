@@ -1,0 +1,116 @@
+\documentclass{article}
+
+\input{setup}
+
+\begin{document}
+
+\CAPA{Ordenação de Objetos Móveis}{BCC202 - Estrutura de Dados I}{Felipe Braz Marques\linebreak Matheus Peixoto Ribeiro Vieira\linebreak Pedro Henrique Rabelo Leão de Oliveira}{Pedro Henrique Lopes Silva}
+
+
+\section{Introdução}
+Para este trabalho é necessário entregar um código em C, que passado o x e o y de três coordenadas calcula o deslocamento e a distância percorrida. 
+
+\subsection{Especificações do problema}
+    {Utilizando a liguagem de programação C, é necessário ler a entrada de n pontos: A(Xa, Ya), B(Xb, Yb), ..., N(Xn, Yn). E calcular a distância percorrida e o deslocamento. Depois é necessário imprimir em ordem decrescente da distância e, caso há empate, utilizar o deslocamento em ordem crescente para critério de decisão. Porém se continuar igual, deverá ordenar por ordem alfabetica do nome.
+    }
+
+\subsection{Considerações iniciais}
+
+    Algumas ferramentas foram utilizadas durante a criação deste projeto:
+    
+    \begin{itemize}
+      \item Ambiente de desenvolvimento do código fonte: Visual Studio Code. 
+      \item Linguagem utilizada: C.
+      \item Ambiente de desenvolvimento da documentação: Overleaf \LaTeX. \footnote{Disponível em \url{https://www.overleaf.com/}}
+    \end{itemize}
+
+\subsection{Ferramentas utilizadas}
+    Algumas ferramentas foram utilizadas para testar a implementação, como:
+    \begin{itemize}
+        \item[-] \textit{GCC}: versão 11.3.0.
+        \item[-] \textit{Valgrind}: versão 3.18.1.
+    \end{itemize}
+
+\subsection{Especificações da máquina}
+    A máquina onde o desenvolvimento e os testes foram realizados possui a seguinte configuração:
+    \begin{itemize}
+        \item[-] Processador: Intel i5-9300H.
+        \item[-] Memória RAM: 16Gb.
+        \item[-] Sistema Operacional: Ubuntu 22.04.1 LTS.
+    \end{itemize}
+
+\subsection{Instruções de compilação e execução}
+    
+    Para a compilação do projeto, basta digitar:
+    
+    \begin{tcolorbox}[title=Compilando o projeto,width=\linewidth]
+        \par gcc -c tp.c -Wall
+        \par gcc -c ordenacao.c -Wall
+        \par gcc tp.o ordenacao.o -o exe
+
+    \end{tcolorbox}
+    
+    Usou-se para a compilação as seguintes opções:
+    \begin{itemize}
+        \item [-] \emph{-Wall}: para mostrar todos os possível \emph{warnings} do código.
+    \end{itemize}
+    
+    Para a execução do programa basta digitar:
+    \begin{tcolorbox}[title=,width=\linewidth]
+        ./exe caminho\_até\_o\_arquivo\_de\_entrada
+    \end{tcolorbox}
+
+\clearpage
+
+\section{Desenvolvimento}
+
+\subsection{ordenacao.h}
+    \par Primeiramente, o grupo começou a desenvolver a interface do TAD no arquivo ordenacao.h, a fim de ter, desde o princípio, bem estruturado as principais funções do programa, sendo elas "alocaPontos", "desalocaPontos", "desalocaTrajeto", "calcularDistancia", "calcularDeslocamento", "imprime", "alocaTrajetos", "lerTrajetos", "ordenaDistancia", "ordenaDeslocamento", "ordenaNome" e "ordenacao", além dos typedefs das structs.
+    
+\subsection{ordenacao.c}
+
+    Dentro do arquivo ordenacao.c foi desenvolvido o corpo das funções prototipadas no ordenacao.h 
+    \par No início do arquivo temos duas structs. A primeira com nome \textbf{"ponto"}, para representar as posições da trajetória, e a segunda com o nome de \textbf{"trajeto"}, para representar o trajeto feito pelos objetos móveis, possuindo um vetor do tipo ponto dentro de sua estrutura.
+    
+    \par A função \textbf{"alocaPontos"} recebe por parâmetro um inteiro n indicando a quantidade de Pontos que serão alocados. Depois eles são alocados e é retornando um vetor de Ponto.
+
+    \par A função \textbf{"desalocaTrajeto"} recebe um ponteiro de Ponto e desaloca seu espaço da memória.
+
+    \par A função \textbf{"desalocaTrajeto"} recebe como parametro um ponteiro de ponteiro da struct Trajeto, a quantidade de trajetos e pontos e realiza um for de 0 até a quantidade de trajetos decrescido de um para desalocar os trajetos.
+
+    \par A função \textbf{"calcularDeslocamentoParcial"} recebe um ponto de início e um ponto final, e calcula a distância pela fórmula da distância entre dois pontos no plano cartesiano. Vale ressaltar que essa função existe pois, o cálculo da distância é a soma da distância de todos os pontos, e o cálculo de deslocamento é feito pela distancia de somente dois pontos. Assim, essa função faz-se útil para evitar a repetição de código.
+
+    \par A função \textbf{"calcularDistancia"} recebe como parâmetro um vetor de Trajeto, um index, um qtdPontos. A partir de um for, chama a função calcularDeslocamentoParcial para calcular o deslocamento entre dois pontos, e esse valor é somado na distância final. Ao final da função, o valor da distancia é atribuído para a distanciaTotal do trajetos na posição index, utilizando a função roundf para arredondar o valor para duas casas decimais, evitando imprecisões naturais de pontos flutuantes, permitindo, assim, a comparação dos mesmos em um momento futuro.
+
+    \par A função \textbf{"calcularDeslocamento"} vai receber o index do trajeto atual para calcular o desolocamento a partir do primeiro e último ponto.
+
+     \par A função \textbf{"ordenacao"} recebe como parâmetro um vetor de Trajeto e a quantidade de trajetos. Assim, serão realizadas três ordenações utilizando o QuickSort, que possui custo nLog(n), escolhido por ter um gasto de memória menor que o MergeSort. A primeira ordenação será de todo o vetor com base na distância, para deixá-la em ordem decrescente.
+     \par Depois é feito um for que varre todo o vetor de trajetos à procura de duas distâncias iguais, a do contador do for e a do contador acrescido de um. Caso encontre, é feito um for para saber até onde irá  ocorrer essa igualdade. Quando encontra todas as igualdades, é chamada a função de ordenaDeslocamento, passando o vetor de trajetos e os índices de começo e fim da igualdade, para ordenar de forma crescente. 
+     \par Por fim, para finalizar a ordenação, é feito um outro for de todo o vetor procurando onde houve uma igualdade da distância e deslocameto, passando para a função ordenaNome o vetor de trajeto e os indices, possibilitando, assim, a ordenação.
+
+     \par A função \textbf{"imprime"} recebe um vetor de Trajeto e a quantidade total de trajetos como parâmetros. Utilizando um for, imprime o nome dos trajetos, juntamente de suas respectivas distancia total e deslocamento total.
+
+     \par A função \textbf{"alocaTrajetos"} recebe um inteiro n como parâmetro, e aloca dinamicamente um vetor de Trajeto de tamanho n*sizeof(trajeto). Esse vetor é retornado ao final da função.
+
+     \par A função \textbf{"lerTrajetos"} recebe como parâmetros a quantidade de trajetos, a quantidade de Pontos e o vetor de trajetos. A partir de um for, é lido o nome de cada trajeto. Posteriormente, é alocado dinamicamente um vetor de pontos. E, por último, é lido os pontos de cada trajeto.
+     
+
+\subsection{tp.c}
+    Já o arquivo tp.c contém a inclusão do automato.h e a main, na qual está organizado a execução do programa, utilizando das interfaces do TAD.
+    \par Vale ressaltar, que há a presença de um for que vai de zero até a quantidade de trajetos para calcular os deslocamentos e distância de todos os trajetos.
+
+\clearpage
+\section{Análise dos Resultados}
+    \par Com o fim do trabalho prático, conseguimos obter os resultados esperados com os casos de teste disponibilizados, mesmo tendo um problema na ordenação dos nomes, que foi resolvido a partir da identificação de um erro na comparação dos vetores, pois o indíce estava trocado, o que gerou complicações durante um período do desenvolvimento.
+
+\clearpage
+\section{Impressões Gerais e Considerações Finais}
+
+Fazendo uma análise geral sobre o trabalho, foi possível compreender melhor o uso das structs com a separação da interface no ordenacao.h e a implementação da mesma no arquivo ordenacao.c. O que, no início do desenvolvimento do código gerou algumas dúvidas e dificuldades para implementar. Porém após entender que as manipulações deveriam ser feitas no ordenacao.c, o desenvolvimento ficou mais simples e dinâmico.
+\par Outro ponto a se destacar durante o desenvolvimento, foi na construção da função ordenaNome, pois foi necessário entender como funcionava a função strcmp da biblioteca string.h que retorna um valor positivo ou negativo, utilizado no código para saber se a comparação já estava, ou não, em ordem alfabética.
+\par Por fim, o desenvolvimento do trabalho nos desafiou em algumas partes, como no entendimento dos métodos de ordenação, desenvolvidos antes de serem vistos em sala, mas em geral foi bem tranquilo, pois as outras partes já haviam sido conversadas em sala de aula.
+
+
+\clearpage
+
+\end{document}

@@ -1,0 +1,1 @@
+gcc -Wall *.c -o exe -g; valgrind --max-stackframe=5128032 -s ./exe < casos_de_teste/3.in
