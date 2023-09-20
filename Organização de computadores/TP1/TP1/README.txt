@@ -1,0 +1,1 @@
+Para que o código funcione corretamente, é importante que os arquivos estejam em uma pasta chamada "Arquivos" dentro do direório raiz do código.

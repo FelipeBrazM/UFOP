@@ -1,0 +1,24 @@
+Compilação:
+
+    gcc -Wall Source/*.c -o exe
+
+
+
+Inicializacao:
+
+    Os valores para cada item deverão ser alterados no próprio código fonte, pois a main somete aceita o arg com tamanho igual a 3
+
+    Multiplicação
+    ./exe multiply tam_ram      com tam_ram >= 2
+
+    Divisão 
+    ./exe division tam_ram      com tam_ram >= 4
+
+    Exponenciação
+    ./exe expoente tam_ram      com tam_ram >= 2
+
+    Fatorial
+    ./exe factorial tam_ram     com tam_ram >= 4
+
+    Progressao aritmetica       
+    ./exe ap tam_ram            com tam_ram >= 2

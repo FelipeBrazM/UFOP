@@ -1,0 +1,11 @@
+Compilação:
+
+    gcc -Wall Source/*.c -o exe
+
+
+
+Inicializacao:
+	./exe random RAM L1 L2 L3
+	
+	O tamanho das memórias devem seguir o seguinte quesito RAM > L3 > L2 > L1
+
