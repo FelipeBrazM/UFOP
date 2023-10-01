@@ -8,7 +8,7 @@ void QuebraLinha(){
 
 int main(){
     
-    char comando[32];
+    char comando[32], lixo;
     char matar[32] = "kill -9 ";
     char prioridade[32] = "renice 10 -p ";
     char matarTodos[32] = "killall ";
@@ -30,6 +30,8 @@ int main(){
 
     //Executando o comando pstree
     system("pstree");
+    printf("\x1b[33m""Digite qualquer tecla e enter para prosseguir: ""\x1b[0m");
+    scanf("%s", &lixo);
     QuebraLinha();
     
     //Executando o comando top
@@ -37,7 +39,7 @@ int main(){
     QuebraLinha();
 
     //Executando o comando kill
-    printf("Entre com o valor do PID que você deseja dar o kill: ");
+    printf( "\x1b[32m""Entre com o valor do PID que você deseja dar o kill: ""\x1b[0m");
     scanf("%s", comando);
     strcat(matar,comando);
     system(matar);
@@ -46,18 +48,19 @@ int main(){
     QuebraLinha();
     
     //Executando o comando killall
-    printf("Entre com nome do programa que você deseja dar o killall: ");
+    printf( "\x1b[32m""Entre com nome do programa que você deseja dar o killall: ""\x1b[0m");
     scanf("%s", comando);
     strcat(matarTodos,comando);
     system(matarTodos);
     QuebraLinha();
     system("ps");
     QuebraLinha();
+    getchar();
 
     //Executando o comando renice
     system("top");
     QuebraLinha();
-    printf("Entre com o valor do PID que você deseja passar para a prioridade 10: ");
+    printf( "\x1b[32m""Entre com o valor do PID que você deseja passar para a prioridade 10: ""\x1b[0m");
     scanf("%s", comando);
     strcat(prioridade,comando);
     system(prioridade);
@@ -66,12 +69,13 @@ int main(){
     QuebraLinha();
 
     //Executando o comando pkill
-    printf("Entre com nome do programa que você deseja dar o pKill: ");
+    printf( "\x1b[32m""Entre com nome do programa que você deseja dar o pKill: ""\x1b[0m");
     scanf("%s", comando);
     strcat(pMatar,comando);
     system(pMatar);
     QuebraLinha();
     system("ps");
+    QuebraLinha();
 
     return 0;
 }
