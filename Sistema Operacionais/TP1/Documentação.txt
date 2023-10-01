@@ -1,0 +1,15 @@
+Para executar o código é necessário primeiro compilar o código principal do TP, com a seguinte diretiva de compilação: 
+gcc -Wall tp1.c -o main
+
+Logo após é necessário também compilar os códigos teste, que vai nos auxiliar durante a execução do TP,
+para isso é necessário usar as seguintes linhas de comando:
+gcc -Wall teste.c -o teste1
+gcc -Wall teste.c -o teste2
+gcc -Wall teste.c -o teste3
+gcc -Wall teste.c -o teste4
+gcc -Wall teste.c -o teste5
+
+
+Após compilar todos estes arquivos, vamos executá-los:
+./teste1 & ./teste2 & ./teste3 & ./teste3 & ./teste3 & ./teste4 & ./teste5 & ./main
+
