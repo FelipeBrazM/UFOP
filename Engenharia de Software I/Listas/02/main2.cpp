@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
    
     //-----------------------------------------------------------------
     char *pChar;
-    char disciplina[] = "Tecnicas de Programação II";
+    char disciplina[] = "Tecnicas de ProgramaÃ§Ã£o II";
 
     pChar = disciplina;
     while( *pChar != '\0' ) {
