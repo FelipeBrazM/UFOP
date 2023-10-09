@@ -30,8 +30,8 @@ int main(){
 
     //Executando o comando pstree
     system("pstree");
-    printf("\x1b[33m""Digite qualquer tecla e enter para prosseguir: ""\x1b[0m");
-    scanf("%s", &lixo);
+    printf("\x1b[33m""Digite enter para prosseguir: ""\x1b[0m");
+    scanf("%c", &lixo);
     QuebraLinha();
     
     //Executando o comando top
