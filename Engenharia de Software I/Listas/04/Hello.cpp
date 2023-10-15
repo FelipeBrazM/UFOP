@@ -1,4 +1,4 @@
-#define DEMO1
+#define DEMO2
 
 #include "Hello.h"
 #include "iostream"
@@ -6,13 +6,13 @@
 using namespace std;
 
 #ifdef DEMO1
-int main( int argc, char *argv )
+int main()
 {
 	string nome;
 	char c = 'A';
 	int i = 65;
 
-	printf("Teste")
+	printf("Teste ");
 	Buffer<char> cBuf(c); 
 	Buffer<int> iBuf(i);
 	cBuf.print();
@@ -30,7 +30,7 @@ int main( int argc, char *argv )
 /////////////////////////////////////////////////////////////////////////////////////
 
 #ifdef DEMO2
-int main( int argc, char *argv )
+int main()
 {
 	string nome;
 	char c = 'A';
@@ -52,6 +52,4 @@ int main( int argc, char *argv )
 	return 0;
 }
 #endif
-
-
 
