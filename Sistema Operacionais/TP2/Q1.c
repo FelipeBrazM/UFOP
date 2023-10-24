@@ -10,6 +10,8 @@
 #define WRITE 1
 
 void menu();
+void VerificCreatePipe(int *, int *);
+void VerificOpenPipe(int *);
 
 int main(){
 
@@ -19,16 +21,11 @@ int main(){
     int caractere = 0;
 
     //Verific if able to create a pipeline, in case of sucess return value 0
-    if(pipe(saldo) < 0 || pipe(opcao) < 0){
-        printf("\x1b[31m""Error of create the pipe\n""\x1b[0m");
-        exit(1);
-    }
+    VerificCreatePipe(saldo, opcao);
 
     //Verific if able to open and write in the archive
-    int aux = 0;
-    if(write(saldo[WRITE], &aux, sizeof(int)) == -1){
-        printf("\x1b[31m""Error, not possible write in the pipe\n""\x1b[0m");
-    }
+    VerificOpenPipe(saldo);
+   
 
     pid_t pidDad = getpid(); /* Variable to store the pid of dad process */
     pid_t son1 = fork(); /* Variable to store the pid of son process, the function "fork()" return the pid */
@@ -126,5 +123,19 @@ void menu(){
     printf("Para encerrar o programa aperte [k]\n");
     printf("Para confirmar a sua escolha aperte [ENTER]\n\n");
     printf("O valor incial do saldo é: 0.0 UD\n""\x1b[0m");
+}
+
+void VerificCreatePipe(int *saldo, int *opcao){
+    if(pipe(saldo) < 0 || pipe(opcao) < 0){
+        printf("\x1b[31m""Error of create the pipe\n""\x1b[0m");
+        exit(1);
+    }
+}
+
+void VerificOpenPipe(int *saldo){
+    int aux = 0;
+    if(write(saldo[WRITE], &aux, sizeof(int)) == -1){
+        printf("\x1b[31m""Error, not possible write in the pipe\n""\x1b[0m");
+    }
 }
 
