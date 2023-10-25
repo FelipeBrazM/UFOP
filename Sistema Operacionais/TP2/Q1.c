@@ -29,7 +29,7 @@ int main(){
 
     pid_t pidDad = getpid(); /* Variable to store the pid of dad process */
     pid_t son1 = fork(); /* Variable to store the pid of son process, the function "fork()" return the pid */
-    if(son1 < 0){
+    if(son1 < 0){ /* If have a problem to do "fork()" the function return a value negative */
         printf("\x1b[31m""Failed to fork\n""\x1b[0m");
         exit(1);
     }
