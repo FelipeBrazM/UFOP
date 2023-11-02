@@ -11,7 +11,7 @@ Model::Model(): name(""), time(0){}
 
 Model::Model(const string name, const double time) : name(name), time(time) {}
 
-Model::~Model() {
+Model:: ~Model() {
 	this->systens.clear();
 	this->flows.clear();
 }

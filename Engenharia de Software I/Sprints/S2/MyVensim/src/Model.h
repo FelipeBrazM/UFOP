@@ -22,7 +22,7 @@ public:
 	Model();
 	Model(const string name = "", const double time = 0.0);
 	Model(const Model& m);
-	~Model();
+	virtual ~Model();
 
 	void add(System* const s);
 
