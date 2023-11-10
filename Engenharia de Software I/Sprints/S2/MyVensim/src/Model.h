@@ -18,12 +18,12 @@ protected:
 	string name;
 
 private:
+	Model(const Model& m);
 	Model& operator= (const Model& m);
 
 public:
 	Model();
 	Model(const string name = "", const double time = 0.0);
-	Model(const Model& m);
 	virtual ~Model();
 
 	void add(System* const s);
