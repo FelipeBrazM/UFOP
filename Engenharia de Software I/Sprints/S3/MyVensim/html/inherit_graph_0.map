@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_element.html" title="Class that represents any element that can be included in the model." alt="" coords="5,56,76,83"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Flow connecting two systems." alt="" coords="134,5,183,32"/>
+<area shape="rect" id="node3" href="$class_system.html" title="System that represents something that stores something." alt="" coords="125,56,192,83"/>
+<area shape="rect" id="node4" href="$class_variable.html" title="Variables that can affect Systems and Flows." alt="" coords="124,107,193,133"/>
+</map>

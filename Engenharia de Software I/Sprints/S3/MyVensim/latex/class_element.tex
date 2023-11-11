@@ -1,0 +1,171 @@
+\hypertarget{class_element}{}\doxysection{Element Class Reference}
+\label{class_element}\index{Element@{Element}}
+
+
+Class that represents any element that can be included in the model.  
+
+
+
+
+{\ttfamily \#include $<$Element.\+h$>$}
+
+
+
+Inheritance diagram for Element\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_element__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Element\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_element__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_element_ab0d0e20be9a36ae676202db753faeec9}{Element}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_element}{Element}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_element_a7684d5f395321493c884dc9dae6f5177}{Element}} (string \mbox{\hyperlink{class_element_a63e156c168905a24437098bfff0e5366}{name}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_element}{Element}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_element_a13d54ba9c08b6bec651402f1c2bb002c}{$\sim$\+Element}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_element}{Element}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_element_ac32d5701b8eb276aa176eeb73ac650b2}{set\+Name}} (string \mbox{\hyperlink{class_element_a63e156c168905a24437098bfff0e5366}{name}})
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_element_af98db41efc12d77b9750ef63833aa2c1}{get\+Name}} (void)
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_element_af713cb4c4d9a3f5415b45a6e9246f9a3}{saida}} (ostream \&) const
+\begin{DoxyCompactList}\small\item\em Class of output default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_element_a63e156c168905a24437098bfff0e5366}{name}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_element_a904ded9af223a29e8ac8868880f03d71}{operator$<$$<$}} (ostream \&, const \mbox{\hyperlink{class_element}{Element}} \&)
+\begin{DoxyCompactList}\small\item\em cout operator overload \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that represents any element that can be included in the model. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_element_ab0d0e20be9a36ae676202db753faeec9}\label{class_element_ab0d0e20be9a36ae676202db753faeec9}} 
+\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Element\+::\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_element}{Element}} object. 
+
+\mbox{\Hypertarget{class_element_a7684d5f395321493c884dc9dae6f5177}\label{class_element_a7684d5f395321493c884dc9dae6f5177}} 
+\index{Element@{Element}!Element@{Element}}
+\index{Element@{Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{Element()}{Element()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Element\+::\+Element (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_element}{Element}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & name of element \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_element_a13d54ba9c08b6bec651402f1c2bb002c}\label{class_element_a13d54ba9c08b6bec651402f1c2bb002c}} 
+\index{Element@{Element}!````~Element@{$\sim$Element}}
+\index{````~Element@{$\sim$Element}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{$\sim$Element()}{~Element()}}
+{\footnotesize\ttfamily Element\+::$\sim$\+Element (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_element}{Element}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_element_af98db41efc12d77b9750ef63833aa2c1}\label{class_element_af98db41efc12d77b9750ef63833aa2c1}} 
+\index{Element@{Element}!getName@{getName}}
+\index{getName@{getName}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Element\+::get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_element_af713cb4c4d9a3f5415b45a6e9246f9a3}\label{class_element_af713cb4c4d9a3f5415b45a6e9246f9a3}} 
+\index{Element@{Element}!saida@{saida}}
+\index{saida@{saida}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{saida()}{saida()}}
+{\footnotesize\ttfamily void Element\+::saida (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Class of output default. 
+
+
+
+Reimplemented in \mbox{\hyperlink{class_flow_ad62b76dce1652bb31d68c4f1249eeedb}{Flow}}, \mbox{\hyperlink{class_system_a99f3c77a21c97150fe068c093d346ed8}{System}}, and \mbox{\hyperlink{class_variable_a5b82cb9e4e242171963fdcb0d7fafe80}{Variable}}.
+
+\mbox{\Hypertarget{class_element_ac32d5701b8eb276aa176eeb73ac650b2}\label{class_element_ac32d5701b8eb276aa176eeb73ac650b2}} 
+\index{Element@{Element}!setName@{setName}}
+\index{setName@{setName}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Element\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_element_a904ded9af223a29e8ac8868880f03d71}\label{class_element_a904ded9af223a29e8ac8868880f03d71}} 
+\index{Element@{Element}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_element}{Element}} \&}]{element }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+cout operator overload 
+
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_element_a63e156c168905a24437098bfff0e5366}\label{class_element_a63e156c168905a24437098bfff0e5366}} 
+\index{Element@{Element}!name@{name}}
+\index{name@{name}!Element@{Element}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Element\+::name\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\hyperlink{class_element}{Element}} name 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_element_8h}{Element.\+h}}\item 
+src/\mbox{\hyperlink{_element_8cpp}{Element.\+cpp}}\end{DoxyCompactItemize}

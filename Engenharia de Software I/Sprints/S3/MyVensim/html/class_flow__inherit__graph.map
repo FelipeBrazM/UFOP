@@ -1,0 +1,4 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="node1" title="Flow connecting two systems." alt="" coords="5,204,116,531"/>
+<area shape="rect" id="node2" href="$class_element.html" title="Class that represents any element that can be included in the model." alt="" coords="11,5,110,156"/>
+</map>

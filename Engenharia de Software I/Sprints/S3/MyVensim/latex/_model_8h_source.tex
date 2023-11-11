@@ -1,0 +1,46 @@
+\hypertarget{_model_8h_source}{}\doxysection{Model.\+h}
+\label{_model_8h_source}\index{src/Model.h@{src/Model.h}}
+\mbox{\hyperlink{_model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef MODEL\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define MODEL\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_system_8h}{System.h}}"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_flow_8h}{Flow.h}}"{}}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{10 }
+\DoxyCodeLine{15 \textcolor{keyword}{class }\mbox{\hyperlink{class_model}{Model}} \{}
+\DoxyCodeLine{16 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{17     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}};}
+\DoxyCodeLine{18     vector<System*> \mbox{\hyperlink{class_model_a9a7232434bf6cd10436b729fd7814c0e}{systens}};}
+\DoxyCodeLine{19     vector<Flow*> \mbox{\hyperlink{class_model_aa76c9411f1cf6da6f4c696b2feadcb1a}{flows}};}
+\DoxyCodeLine{20     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}};}
+\DoxyCodeLine{22 \textcolor{keyword}{private}:}
+\DoxyCodeLine{29     \mbox{\hyperlink{class_model}{Model}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{class_model}{Model}}\& m);}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{36     \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}();}
+\DoxyCodeLine{43     \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}} = \textcolor{stringliteral}{"{}"{}}, \textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}} = 0.0);}
+\DoxyCodeLine{49     \mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_model}{Model}}\& m);}
+\DoxyCodeLine{54     \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{\string~Model}}();}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{61     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a187a20b5a900d00628d1111b6346ecbc}{add}}(\mbox{\hyperlink{class_system}{System}}* \textcolor{keyword}{const} s);}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{68     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a187a20b5a900d00628d1111b6346ecbc}{add}}(\mbox{\hyperlink{class_flow}{Flow}}* \textcolor{keyword}{const} f);}
+\DoxyCodeLine{69     }
+\DoxyCodeLine{75     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_ac1cfa9230249cab38c522785555facf0}{setTime}}(\textcolor{keyword}{const} \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_ac08e6be5375c12b4f09dfd3e88552e46}{time}});}
+\DoxyCodeLine{81     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_model_a8694ee782322ce3f1d583bafc37ef4a4}{getTime}}();}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{88     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}{setName}}(\textcolor{keyword}{const} \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a2d9aef6a80a205a03e4e99b5483af9a0}{name}});}
+\DoxyCodeLine{94     \textcolor{keywordtype}{string} \mbox{\hyperlink{class_model_a6261dc4188287e61b7bf8b208569e6b9}{getName}}();}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{106     \textcolor{keywordtype}{bool} \mbox{\hyperlink{class_model_ad76a68b7da76121d0bb6e8b628f4335c}{execute}}(\textcolor{keywordtype}{double} initialTime, \textcolor{keywordtype}{double} finalTime, \textcolor{keywordtype}{double} timeStep);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108 \};}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//MODEL\_H}}
+
+\end{DoxyCode}

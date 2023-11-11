@@ -1,0 +1,6 @@
+<map id="Element" name="Element">
+<area shape="rect" id="node1" title="Class that represents any element that can be included in the model." alt="" coords="153,5,251,156"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Flow connecting two systems." alt="" coords="5,204,116,531"/>
+<area shape="rect" id="node3" href="$class_system.html" title="System that represents something that stores something." alt="" coords="141,255,263,479"/>
+<area shape="rect" id="node4" href="$class_variable.html" title="Variables that can affect Systems and Flows." alt="" coords="287,270,410,465"/>
+</map>

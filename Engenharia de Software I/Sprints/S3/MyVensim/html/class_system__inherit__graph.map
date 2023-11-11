@@ -1,0 +1,4 @@
+<map id="System" name="System">
+<area shape="rect" id="node1" title="System that represents something that stores something." alt="" coords="5,204,128,428"/>
+<area shape="rect" id="node2" href="$class_element.html" title="Class that represents any element that can be included in the model." alt="" coords="17,5,116,156"/>
+</map>
