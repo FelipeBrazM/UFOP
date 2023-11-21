@@ -1,0 +1,40 @@
+\hypertarget{_variable_8h_source}{}\doxysection{Variable.\+h}
+\label{_variable_8h_source}\index{src/Variable.h@{src/Variable.h}}
+\mbox{\hyperlink{_variable_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef VARIABLE\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define VARIABLE\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_element_8h}{Element.h}}"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <stdlib.h>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{16 \textcolor{keyword}{class }\mbox{\hyperlink{class_variable}{Variable}} : \textcolor{keyword}{public} \mbox{\hyperlink{class_element}{Element}}\{}
+\DoxyCodeLine{17 \textcolor{keyword}{protected}: }
+\DoxyCodeLine{18     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_variable_abf2e13f833da419ab3acd6678038a57c}{initialValue}};}
+\DoxyCodeLine{19     vector <Element *> \mbox{\hyperlink{class_variable_a7fcee385d048fae962f65809306ad95b}{out}};}
+\DoxyCodeLine{21 \textcolor{keyword}{private}:}
+\DoxyCodeLine{28     \mbox{\hyperlink{class_variable}{Variable}}\& operator= (\textcolor{keyword}{const} \mbox{\hyperlink{class_variable}{Variable}}\& s);}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30 \textcolor{keyword}{public}:}
+\DoxyCodeLine{35     \mbox{\hyperlink{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}{Variable}}();}
+\DoxyCodeLine{42     \mbox{\hyperlink{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}{Variable}}(\textcolor{keywordtype}{double} value, \textcolor{keywordtype}{string} \mbox{\hyperlink{class_element_a63e156c168905a24437098bfff0e5366}{name}});}
+\DoxyCodeLine{48     \mbox{\hyperlink{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}{Variable}}(\textcolor{keyword}{const} \mbox{\hyperlink{class_variable}{Variable}}\& var);}
+\DoxyCodeLine{53     \textcolor{keyword}{virtual} \mbox{\hyperlink{class_variable_acfc14d0ad77af53025f890b4d3a7745a}{\string~Variable}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{59     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_variable_a53f9fcc222b5821b0c474b52037d5516}{setInitialValue}}(\textcolor{keywordtype}{double});}
+\DoxyCodeLine{65     \textcolor{keywordtype}{double} \mbox{\hyperlink{class_variable_a2e6014b259e6721c1f5fa728129ec52f}{getInitialValue}}(\textcolor{keywordtype}{void}) \textcolor{keyword}{const};}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{72     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_variable_a07ec295e20ad8f370797e050caa865f0}{addOut}}(\mbox{\hyperlink{class_element}{Element}} *element);}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{78     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{class_variable_a5b82cb9e4e242171963fdcb0d7fafe80}{saida}}(ostream\&) \textcolor{keyword}{const};}
+\DoxyCodeLine{84     \textcolor{keyword}{friend} ostream\& \mbox{\hyperlink{class_variable_a27eb22c9f5ec0f8a9c5aff938dab7ecc}{operator << }}(ostream\&, \textcolor{keyword}{const} \mbox{\hyperlink{class_variable}{Variable}}\&); }
+\DoxyCodeLine{85 \};}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87 \textcolor{preprocessor}{\#endif }\textcolor{comment}{//VARIABLE\_H}}
+
+\end{DoxyCode}
