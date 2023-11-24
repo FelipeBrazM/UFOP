@@ -1,8 +1,8 @@
 /* Felipe Braz Marques - 22.1.4030 */
 
 #include "Model.h"
-#include "System.h"
-#include "Flow.h" 
+#include "AbstractSystem.h"
+#include "AbstractFlow.h" 
 
 #include <stdlib.h>
 #include <iostream>

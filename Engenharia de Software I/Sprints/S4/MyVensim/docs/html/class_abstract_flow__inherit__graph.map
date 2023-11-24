@@ -1,4 +1,5 @@
 <map id="AbstractFlow" name="AbstractFlow">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,132,244"/>
-<area shape="rect" id="node2" href="$class_flow.html" title="Flow connecting two Systems." alt="" coords="13,292,124,633"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,121,309"/>
+<area shape="rect" id="Node000002" href="$class_flow.html" title="Flow connecting two Systems." alt="" coords="13,357,113,811"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="66,324,66,357,61,357,61,324"/>
 </map>

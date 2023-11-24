@@ -1,0 +1,17 @@
+<map id="Model::getName" name="Model::getName">
+<area shape="rect" id="Node000001" title="Get the Name object." alt="" coords="616,56,732,83"/>
+<area shape="rect" id="Node000002" href="$unit__model_8cpp.html#aa2fbf64beac74e56441034e50b26868a" title="Testa a construção de instâncias da classe Model." alt="" coords="411,5,568,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="608,54,540,35,542,30,609,49"/>
+<area shape="rect" id="Node000006" href="$unit__model_8cpp.html#a628d685951b3cfc03682a4cb666199dc" title="Testa o método getName da classe Model." alt="" coords="418,56,561,83"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="600,72,561,72,561,67,600,67"/>
+<area shape="rect" id="Node000007" href="$unit__model_8cpp.html#a69d8a3520058c5b3c0a79db4047e001e" title="Testa o método setName da classe Model." alt="" coords="418,107,561,133"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="609,90,542,109,540,103,608,85"/>
+<area shape="rect" id="Node000003" href="$unit__model_8cpp.html#a310f5d7d064c0c5d2e6423c9f3a463fb" title="Função que executa todos os testes unitários para a classe Model." alt="" coords="218,56,363,83"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="420,39,347,58,345,53,419,34"/>
+<area shape="rect" id="Node000004" href="$unit__test_8cpp.html#ad36c4b2c7080a1289f22f17233075394" title="unit testing function" alt="" coords="103,56,170,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="202,72,171,72,171,67,202,67"/>
+<area shape="rect" id="Node000005" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,56,55,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="87,72,55,72,55,67,87,67"/>
+<area shape="poly" id="edge6_Node000006_Node000003" title=" " alt="" coords="402,72,363,72,363,67,402,67"/>
+<area shape="poly" id="edge8_Node000007_Node000003" title=" " alt="" coords="419,105,345,86,347,81,420,100"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="Flow::output" name="Flow::output">
+<area shape="rect" id="Node000001" title="Class of output default." alt="" coords="5,81,98,108"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#a1c1081543b63045900d72e643d3b2660" title="Get the Destiny object." alt="" coords="146,5,264,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="76,78,144,42,155,37,157,41,147,46,78,83"/>
+<area shape="rect" id="Node000003" href="$class_flow.html#acc22f2ed73e33b0fcbbad6e02c89cab8" title="Get the Name object." alt="" coords="151,56,259,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="98,84,135,78,136,83,98,90"/>
+<area shape="rect" id="Node000004" href="$class_flow.html#a3a86e6305e2339c97576fe816af64612" title="Get the Origin object." alt="" coords="151,107,259,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="98,100,136,106,135,111,98,105"/>
+<area shape="rect" id="Node000005" href="$class_flow.html#a7ea3e5e65c7155e1c67fd9033ca06ef3" title="Get the Value object." alt="" coords="151,157,259,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="78,106,147,143,157,148,155,153,144,148,76,111"/>
+</map>

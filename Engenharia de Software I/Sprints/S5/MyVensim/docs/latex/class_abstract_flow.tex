@@ -1,0 +1,260 @@
+\doxysection{Abstract\+Flow Class Reference}
+\hypertarget{class_abstract_flow}{}\label{class_abstract_flow}\index{AbstractFlow@{AbstractFlow}}
+
+
+Abstract class tha represente a \doxylink{class_flow}{Flow}.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Flow.\+h$>$}
+
+
+
+Inheritance diagram for Abstract\+Flow\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_abstract_flow__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_abstract_flow_a084d769af9503873b385a840200ff749}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Abstract \doxylink{class_flow}{Flow} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a8d64f0a2a1e316824c1d25985373ee0a}{set\+Origin}} (\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}origin)=0
+\begin{DoxyCompactList}\small\item\em Set the Origin object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_flow_a5439bd4e39053661309a5d81b2e6556b}{get\+Origin}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Origin object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a74c1fc0f7eb33ffe8f2b0f239510c92a}{set\+Destiny}} (\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}destiny)=0
+\begin{DoxyCompactList}\small\item\em Set the Destiny object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_flow_ae1d8c27b38c6e3d8e772d17d6be8b094}{get\+Destiny}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Destiny object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a583938dc9e213a9f4ca1764c50d176d1}{set\+Value}} (double value)=0
+\begin{DoxyCompactList}\small\item\em Set the Value object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_abstract_flow_a9354df5a3f0a878528b7005d864b6bcf}{get\+Value}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Value object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a899e74d764cdf07629083a1638725b6e}{set\+Name}} (string name)=0
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_abstract_flow_af566ce1e83fa1890c58021153d399a27}{get\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a25fbaed3f8c4168201481d1d6a074c0d}{set\+Function}} (double(\texorpdfstring{$\ast$}{*}function)(\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}o, \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}d))=0
+\begin{DoxyCompactList}\small\item\em Set the Function object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_aed16e9e35ae87de7f102d99630938a93}{execute}} ()=0
+\item 
+virtual void \mbox{\hyperlink{class_abstract_flow_a7ae4c248c6cb46b66799ddd548ff9dc4}{output}} (ostream \&out) const =0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class tha represente a \doxylink{class_flow}{Flow}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_abstract_flow_a084d769af9503873b385a840200ff749}\label{class_abstract_flow_a084d769af9503873b385a840200ff749} 
+\index{AbstractFlow@{AbstractFlow}!````~AbstractFlow@{\texorpdfstring{$\sim$}{\string~}AbstractFlow}}
+\index{````~AbstractFlow@{\texorpdfstring{$\sim$}{\string~}AbstractFlow}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractFlow()}{\string~AbstractFlow()}}
+{\footnotesize\ttfamily virtual Abstract\+Flow\+::\texorpdfstring{$\sim$}{\string~}\+Abstract\+Flow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Abstract \doxylink{class_flow}{Flow} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_flow_aed16e9e35ae87de7f102d99630938a93}\label{class_abstract_flow_aed16e9e35ae87de7f102d99630938a93} 
+\index{AbstractFlow@{AbstractFlow}!execute@{execute}}
+\index{execute@{execute}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{class_flow_a7b48839c2cd0a4528a330f7b2ddce449}{Flow}}.
+
+\Hypertarget{class_abstract_flow_ae1d8c27b38c6e3d8e772d17d6be8b094}\label{class_abstract_flow_ae1d8c27b38c6e3d8e772d17d6be8b094} 
+\index{AbstractFlow@{AbstractFlow}!getDestiny@{getDestiny}}
+\index{getDestiny@{getDestiny}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{getDestiny()}{getDestiny()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} Abstract\+Flow\+::get\+Destiny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Destiny object. 
+
+\begin{DoxyReturn}{Returns}
+Abstract\+System\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a1c1081543b63045900d72e643d3b2660}{Flow}}.
+
+\Hypertarget{class_abstract_flow_af566ce1e83fa1890c58021153d399a27}\label{class_abstract_flow_af566ce1e83fa1890c58021153d399a27} 
+\index{AbstractFlow@{AbstractFlow}!getName@{getName}}
+\index{getName@{getName}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Abstract\+Flow\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_acc22f2ed73e33b0fcbbad6e02c89cab8}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a5439bd4e39053661309a5d81b2e6556b}\label{class_abstract_flow_a5439bd4e39053661309a5d81b2e6556b} 
+\index{AbstractFlow@{AbstractFlow}!getOrigin@{getOrigin}}
+\index{getOrigin@{getOrigin}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{getOrigin()}{getOrigin()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} Abstract\+Flow\+::get\+Origin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Origin object. 
+
+\begin{DoxyReturn}{Returns}
+Abstract\+System\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a3a86e6305e2339c97576fe816af64612}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a9354df5a3f0a878528b7005d864b6bcf}\label{class_abstract_flow_a9354df5a3f0a878528b7005d864b6bcf} 
+\index{AbstractFlow@{AbstractFlow}!getValue@{getValue}}
+\index{getValue@{getValue}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double Abstract\+Flow\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Value object. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_flow_a7ea3e5e65c7155e1c67fd9033ca06ef3}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a7ae4c248c6cb46b66799ddd548ff9dc4}\label{class_abstract_flow_a7ae4c248c6cb46b66799ddd548ff9dc4} 
+\index{AbstractFlow@{AbstractFlow}!output@{output}}
+\index{output@{output}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::output (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_ad9f7f6f5e310266496d901084f3b49e6}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a74c1fc0f7eb33ffe8f2b0f239510c92a}\label{class_abstract_flow_a74c1fc0f7eb33ffe8f2b0f239510c92a} 
+\index{AbstractFlow@{AbstractFlow}!setDestiny@{setDestiny}}
+\index{setDestiny@{setDestiny}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{setDestiny()}{setDestiny()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::set\+Destiny (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}}]{destiny }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Destiny object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em destiny} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_afae4e338b5df1ed143473338eea49696}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a25fbaed3f8c4168201481d1d6a074c0d}\label{class_abstract_flow_a25fbaed3f8c4168201481d1d6a074c0d} 
+\index{AbstractFlow@{AbstractFlow}!setFunction@{setFunction}}
+\index{setFunction@{setFunction}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{setFunction()}{setFunction()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::set\+Function (\begin{DoxyParamCaption}\item[{double(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}o, \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}d)}]{function }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Function object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em function} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_aa81dc96b9a6815d1ec707d6e4d3a8600}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a899e74d764cdf07629083a1638725b6e}\label{class_abstract_flow_a899e74d764cdf07629083a1638725b6e} 
+\index{AbstractFlow@{AbstractFlow}!setName@{setName}}
+\index{setName@{setName}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_ac4c06b0d8f7c61b62424921ac5fa2945}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a8d64f0a2a1e316824c1d25985373ee0a}\label{class_abstract_flow_a8d64f0a2a1e316824c1d25985373ee0a} 
+\index{AbstractFlow@{AbstractFlow}!setOrigin@{setOrigin}}
+\index{setOrigin@{setOrigin}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{setOrigin()}{setOrigin()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::set\+Origin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}}]{origin }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Origin object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_ad15ac61cfaae7074ea819b65338295f4}{Flow}}.
+
+\Hypertarget{class_abstract_flow_a583938dc9e213a9f4ca1764c50d176d1}\label{class_abstract_flow_a583938dc9e213a9f4ca1764c50d176d1} 
+\index{AbstractFlow@{AbstractFlow}!setValue@{setValue}}
+\index{setValue@{setValue}!AbstractFlow@{AbstractFlow}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void Abstract\+Flow\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Value object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_flow_abd02f7dc3e89899385b47886d038a15c}{Flow}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_abstract_flow_8h}{Abstract\+Flow.\+h}}\end{DoxyCompactItemize}

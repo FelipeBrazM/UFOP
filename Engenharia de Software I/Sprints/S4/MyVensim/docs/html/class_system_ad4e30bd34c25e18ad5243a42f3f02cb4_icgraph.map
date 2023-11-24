@@ -1,0 +1,19 @@
+<map id="System::getName" name="System::getName">
+<area shape="rect" id="Node000001" title="Get the Name object." alt="" coords="632,81,758,108"/>
+<area shape="rect" id="Node000002" href="$class_system.html#a99f3c77a21c97150fe068c093d346ed8" title="Class of output default." alt="" coords="449,5,554,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="652,77,583,46,550,35,552,30,585,42,654,72"/>
+<area shape="rect" id="Node000003" href="$unit__system_8cpp.html#a9b6fbdfa7c98ba246778d8ecb21b90fd" title="Testa a construção de instâncias da classe System." alt="" coords="419,56,584,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="616,87,584,83,585,77,616,82"/>
+<area shape="rect" id="Node000007" href="$unit__system_8cpp.html#a836edeb81ad20254175eb760f2ee14b2" title="Testa o método getName da classe System." alt="" coords="426,107,577,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="616,108,578,113,577,107,616,102"/>
+<area shape="rect" id="Node000008" href="$unit__system_8cpp.html#aab29aaa5eaa3ff5c89f4cff87e28363b" title="Testa o método setName da classe System." alt="" coords="426,157,577,184"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="654,117,585,148,552,159,550,154,583,143,652,113"/>
+<area shape="rect" id="Node000004" href="$unit__system_8cpp.html#adb406df99d6825d111c2305f05057475" title="Função que executa todos os testes unitários para a classe System." alt="" coords="218,107,371,133"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,90,353,109,352,103,428,84"/>
+<area shape="rect" id="Node000005" href="$unit__test_8cpp.html#ad36c4b2c7080a1289f22f17233075394" title="unit testing function" alt="" coords="103,107,170,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="203,123,171,123,171,117,203,117"/>
+<area shape="rect" id="Node000006" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,55,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,123,55,123,55,117,87,117"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="410,123,372,123,372,117,410,117"/>
+<area shape="poly" id="edge9_Node000008_Node000004" title=" " alt="" coords="428,156,352,137,353,131,430,150"/>
+</map>

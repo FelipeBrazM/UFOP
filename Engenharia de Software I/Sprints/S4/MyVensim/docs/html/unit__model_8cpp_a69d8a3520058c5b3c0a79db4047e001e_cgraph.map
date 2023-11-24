@@ -1,0 +1,7 @@
+<map id="unit_model_setName" name="unit_model_setName">
+<area shape="rect" id="Node000001" title="Testa o método setName da classe Model." alt="" coords="5,31,149,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a6261dc4188287e61b7bf8b208569e6b9" title="Get the Name object." alt="" coords="197,5,313,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="149,31,181,26,182,32,149,36"/>
+<area shape="rect" id="Node000003" href="$class_model.html#a79ee6699ac4a15fb4dd9a9d5802249c5" title="Set the Name object." alt="" coords="197,56,313,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="149,52,182,56,181,62,149,57"/>
+</map>

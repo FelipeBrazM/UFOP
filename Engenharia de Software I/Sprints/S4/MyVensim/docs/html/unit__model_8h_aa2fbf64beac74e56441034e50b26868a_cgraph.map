@@ -1,0 +1,11 @@
+<map id="unit_model_constructor" name="unit_model_constructor">
+<area shape="rect" id="Node000001" title="Testa a construção de instâncias da classe Model." alt="" coords="5,81,162,108"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a6261dc4188287e61b7bf8b208569e6b9" title="Get the Name object." alt="" coords="234,5,351,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,78,209,41,229,35,230,40,211,47,118,83"/>
+<area shape="rect" id="Node000003" href="$class_abstract_model.html#a4b84d1692a1276073655df8eca40860f" title=" " alt="" coords="210,56,375,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="162,83,194,79,194,84,163,88"/>
+<area shape="rect" id="Node000004" href="$class_model.html#a8694ee782322ce3f1d583bafc37ef4a4" title="Get the Time object." alt="" coords="237,107,348,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="163,102,222,109,222,114,162,107"/>
+<area shape="rect" id="Node000005" href="$class_abstract_model.html#a7abd8663355ecd10b85e28d3b53784a2" title=" " alt="" coords="213,157,372,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="118,106,211,143,230,150,229,155,209,148,116,111"/>
+</map>

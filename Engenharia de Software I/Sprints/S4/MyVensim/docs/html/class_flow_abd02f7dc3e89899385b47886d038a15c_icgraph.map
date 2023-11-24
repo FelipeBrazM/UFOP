@@ -1,0 +1,5 @@
+<map id="Flow::setValue" name="Flow::setValue">
+<area shape="rect" id="Node000001" title="Set the Value object." alt="" coords="156,5,263,32"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#a7b48839c2cd0a4528a330f7b2ddce449" title="Execute function to add to value." alt="" coords="5,5,108,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,21,108,21,108,16,140,16"/>
+</map>

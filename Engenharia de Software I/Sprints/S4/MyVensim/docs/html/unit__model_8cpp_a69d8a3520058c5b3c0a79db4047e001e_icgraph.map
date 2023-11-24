@@ -1,0 +1,9 @@
+<map id="unit_model_setName" name="unit_model_setName">
+<area shape="rect" id="Node000001" title="Testa o método setName da classe Model." alt="" coords="411,5,555,32"/>
+<area shape="rect" id="Node000002" href="$unit__model_8cpp.html#a310f5d7d064c0c5d2e6423c9f3a463fb" title="Função que executa todos os testes unitários para a classe Model." alt="" coords="218,5,363,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,21,364,21,364,16,396,16"/>
+<area shape="rect" id="Node000003" href="$unit__test_8cpp.html#ad36c4b2c7080a1289f22f17233075394" title="unit testing function" alt="" coords="103,5,170,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="202,21,171,21,171,16,202,16"/>
+<area shape="rect" id="Node000004" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,5,55,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="87,21,55,21,55,16,87,16"/>
+</map>

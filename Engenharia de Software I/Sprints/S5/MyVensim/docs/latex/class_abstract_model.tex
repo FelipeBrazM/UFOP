@@ -1,0 +1,321 @@
+\doxysection{Abstract\+Model Class Reference}
+\hypertarget{class_abstract_model}{}\label{class_abstract_model}\index{AbstractModel@{AbstractModel}}
+
+
+Abstract class that represent a \doxylink{class_model}{Model}.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+Model.\+h$>$}
+
+
+
+Inheritance diagram for Abstract\+Model\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_abstract_model__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_abstract_model_ac60bc3fdb72701a5ef2b7bcc867f9870}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Abstract \doxylink{class_model}{Model} object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_abstract_model_ae59d88ea30f596d922d74191223ee27b}{get\+Systens\+Size}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Systens Size object. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{class_abstract_model_a4e6e5641dc07c35507bbaf52287a0e46}{get\+Flows\+Size}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Flows Size object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_model_a1050ea8b353263c80b24fc693f255a10}{set\+Time}} (const double time)=0
+\begin{DoxyCompactList}\small\item\em Set the Time object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_abstract_model_a7abd8663355ecd10b85e28d3b53784a2}{get\+Time}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Time object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_model_a17363242906dbdb059eb95a57c6af9f0}{set\+Name}} (const string name)=0
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_abstract_model_a4b84d1692a1276073655df8eca40860f}{get\+Name}} ()=0
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_model_ada6b9dd6d0ccec7e81d6fb4309d45107}{create\+System}} (double value=0.\+0, string name="{}"{})=0
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{class_system}{System} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_abstract_flow}{Abstract\+Flow}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_model_a90e50bccd7bd31c584e2073edc20a44c}{create\+Flow}} (\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}origin, \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}destiny, double(\texorpdfstring{$\ast$}{*}function)(\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}o, \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}d), string name)=0
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{class_flow}{Flow} object. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_abstract_model_a64a65151c14a4020fb6153b04caf5066}{execute}} (double initial\+Time, double final\+Time, double time\+Step)=0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_abstract_model}{Abstract\+Model}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_abstract_model_a7382dd8a8ed7621e8c6fb6a018e9ac42}{create\+Model}} (string name="{}"{}, double time=0.\+0)
+\begin{DoxyCompactList}\small\item\em Create a \doxylink{class_model}{Model} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{class_abstract_model_a2dfad9d74d70d03146a68f0fcd73eca7}{add}} (\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}const s)=0
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_system}{System} to \doxylink{class_model}{Model}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_model_a72a809026f1ea524c07c0f5c413c4e20}{add}} (\mbox{\hyperlink{class_abstract_flow}{Abstract\+Flow}} \texorpdfstring{$\ast$}{*}const f)=0
+\begin{DoxyCompactList}\small\item\em Add a \doxylink{class_flow}{Flow} to \doxylink{class_model}{Model}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class that represent a \doxylink{class_model}{Model}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_abstract_model_ac60bc3fdb72701a5ef2b7bcc867f9870}\label{class_abstract_model_ac60bc3fdb72701a5ef2b7bcc867f9870} 
+\index{AbstractModel@{AbstractModel}!````~AbstractModel@{\texorpdfstring{$\sim$}{\string~}AbstractModel}}
+\index{````~AbstractModel@{\texorpdfstring{$\sim$}{\string~}AbstractModel}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractModel()}{\string~AbstractModel()}}
+{\footnotesize\ttfamily virtual Abstract\+Model\+::\texorpdfstring{$\sim$}{\string~}\+Abstract\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Abstract \doxylink{class_model}{Model} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_model_a72a809026f1ea524c07c0f5c413c4e20}\label{class_abstract_model_a72a809026f1ea524c07c0f5c413c4e20} 
+\index{AbstractModel@{AbstractModel}!add@{add}}
+\index{add@{add}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void Abstract\+Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_flow}{Abstract\+Flow}} \texorpdfstring{$\ast$}{*}const}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Add a \doxylink{class_flow}{Flow} to \doxylink{class_model}{Model}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & flow do be added \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_model_a309e225ad14f8a972d8f3c8168be3958}{Model}}.
+
+\Hypertarget{class_abstract_model_a2dfad9d74d70d03146a68f0fcd73eca7}\label{class_abstract_model_a2dfad9d74d70d03146a68f0fcd73eca7} 
+\index{AbstractModel@{AbstractModel}!add@{add}}
+\index{add@{add}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual void Abstract\+Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}const}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}
+
+
+
+Add a \doxylink{class_system}{System} to \doxylink{class_model}{Model}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em s} & system to be added \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_model_ac1686c8e3f23615d62046b53ef97212f}{Model}}.
+
+\Hypertarget{class_abstract_model_a90e50bccd7bd31c584e2073edc20a44c}\label{class_abstract_model_a90e50bccd7bd31c584e2073edc20a44c} 
+\index{AbstractModel@{AbstractModel}!createFlow@{createFlow}}
+\index{createFlow@{createFlow}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{createFlow()}{createFlow()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_abstract_flow}{Abstract\+Flow}} \texorpdfstring{$\ast$}{*} Abstract\+Model\+::create\+Flow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}}]{origin,  }\item[{\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}}]{destiny,  }\item[{double(\texorpdfstring{$\ast$}{*})(\mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}o, \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*}d)}]{function,  }\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a \doxylink{class_flow}{Flow} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em origin} & source \doxylink{class_abstract_system}{Abstract\+System} \\
+\hline
+{\em destiny} & target \doxylink{class_abstract_system}{Abstract\+System} \\
+\hline
+{\em function} & function that governs the flow \\
+\hline
+{\em name} & flow name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Abstract\+Flow\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_a95318a55336dd8248437ff6ab69bb166}{Model}}.
+
+\Hypertarget{class_abstract_model_a7382dd8a8ed7621e8c6fb6a018e9ac42}\label{class_abstract_model_a7382dd8a8ed7621e8c6fb6a018e9ac42} 
+\index{AbstractModel@{AbstractModel}!createModel@{createModel}}
+\index{createModel@{createModel}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{createModel()}{createModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_abstract_model}{Abstract\+Model}} \texorpdfstring{$\ast$}{*} Abstract\+Model\+::create\+Model (\begin{DoxyParamCaption}\item[{string}]{name = {\ttfamily "{}"{}},  }\item[{double}]{time = {\ttfamily 0.0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Create a \doxylink{class_model}{Model} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & model name \\
+\hline
+{\em time} & model time \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Abstract\+Model\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+\Hypertarget{class_abstract_model_ada6b9dd6d0ccec7e81d6fb4309d45107}\label{class_abstract_model_ada6b9dd6d0ccec7e81d6fb4309d45107} 
+\index{AbstractModel@{AbstractModel}!createSystem@{createSystem}}
+\index{createSystem@{createSystem}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{createSystem()}{createSystem()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \texorpdfstring{$\ast$}{*} Abstract\+Model\+::create\+System (\begin{DoxyParamCaption}\item[{double}]{value = {\ttfamily 0.0},  }\item[{string}]{name = {\ttfamily "{}"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Create a \doxylink{class_system}{System} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & initial value \\
+\hline
+{\em name} & system name \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Abstract\+System\texorpdfstring{$\ast$}{*} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_afa66f2d24b8c80e75f8cb6c596e117ec}{Model}}.
+
+\Hypertarget{class_abstract_model_a64a65151c14a4020fb6153b04caf5066}\label{class_abstract_model_a64a65151c14a4020fb6153b04caf5066} 
+\index{AbstractModel@{AbstractModel}!execute@{execute}}
+\index{execute@{execute}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual bool Abstract\+Model\+::execute (\begin{DoxyParamCaption}\item[{double}]{initial\+Time,  }\item[{double}]{final\+Time,  }\item[{double}]{time\+Step }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+Time} & initial time of \doxylink{class_model}{Model} execute \\
+\hline
+{\em final\+Time} & final time of \doxylink{class_model}{Model} execute \\
+\hline
+{\em time\+Step} & time step by step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true = everything ok 
+
+false = somenthing is wrong 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_ad76a68b7da76121d0bb6e8b628f4335c}{Model}}.
+
+\Hypertarget{class_abstract_model_a4e6e5641dc07c35507bbaf52287a0e46}\label{class_abstract_model_a4e6e5641dc07c35507bbaf52287a0e46} 
+\index{AbstractModel@{AbstractModel}!getFlowsSize@{getFlowsSize}}
+\index{getFlowsSize@{getFlowsSize}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{getFlowsSize()}{getFlowsSize()}}
+{\footnotesize\ttfamily virtual int Abstract\+Model\+::get\+Flows\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Flows Size object. 
+
+\begin{DoxyReturn}{Returns}
+int number of flows in the model 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_a1e8b9885f52f589e060429cd617cebff}{Model}}.
+
+\Hypertarget{class_abstract_model_a4b84d1692a1276073655df8eca40860f}\label{class_abstract_model_a4b84d1692a1276073655df8eca40860f} 
+\index{AbstractModel@{AbstractModel}!getName@{getName}}
+\index{getName@{getName}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Abstract\+Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Returns}
+string name of \doxylink{class_model}{Model} 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_a6261dc4188287e61b7bf8b208569e6b9}{Model}}.
+
+\Hypertarget{class_abstract_model_ae59d88ea30f596d922d74191223ee27b}\label{class_abstract_model_ae59d88ea30f596d922d74191223ee27b} 
+\index{AbstractModel@{AbstractModel}!getSystensSize@{getSystensSize}}
+\index{getSystensSize@{getSystensSize}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{getSystensSize()}{getSystensSize()}}
+{\footnotesize\ttfamily virtual int Abstract\+Model\+::get\+Systens\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Systens Size object. 
+
+\begin{DoxyReturn}{Returns}
+int number of systens in the model 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_a2f82e9ab458f2c198072c4beafa7847b}{Model}}.
+
+\Hypertarget{class_abstract_model_a7abd8663355ecd10b85e28d3b53784a2}\label{class_abstract_model_a7abd8663355ecd10b85e28d3b53784a2} 
+\index{AbstractModel@{AbstractModel}!getTime@{getTime}}
+\index{getTime@{getTime}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily virtual double Abstract\+Model\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Time object. 
+
+\begin{DoxyReturn}{Returns}
+double time of moment of model 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_model_a8694ee782322ce3f1d583bafc37ef4a4}{Model}}.
+
+\Hypertarget{class_abstract_model_a17363242906dbdb059eb95a57c6af9f0}\label{class_abstract_model_a17363242906dbdb059eb95a57c6af9f0} 
+\index{AbstractModel@{AbstractModel}!setName@{setName}}
+\index{setName@{setName}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Abstract\+Model\+::set\+Name (\begin{DoxyParamCaption}\item[{const string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & to be seted to model \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}{Model}}.
+
+\Hypertarget{class_abstract_model_a1050ea8b353263c80b24fc693f255a10}\label{class_abstract_model_a1050ea8b353263c80b24fc693f255a10} 
+\index{AbstractModel@{AbstractModel}!setTime@{setTime}}
+\index{setTime@{setTime}!AbstractModel@{AbstractModel}}
+\doxysubsubsection{\texorpdfstring{setTime()}{setTime()}}
+{\footnotesize\ttfamily virtual void Abstract\+Model\+::set\+Time (\begin{DoxyParamCaption}\item[{const double}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Time object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time} & to be seted to model in a moment \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_model_ac1cfa9230249cab38c522785555facf0}{Model}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_abstract_model_8h}{Abstract\+Model.\+h}}\item 
+src/\mbox{\hyperlink{_model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

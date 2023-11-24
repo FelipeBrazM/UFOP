@@ -1,0 +1,23 @@
+<map id="Model::getTime" name="Model::getTime">
+<area shape="rect" id="Node000001" title="Get the Time object." alt="" coords="801,107,911,133"/>
+<area shape="rect" id="Node000002" href="$class_model.html#ad76a68b7da76121d0bb6e8b628f4335c" title="function that runs the model" alt="" coords="629,5,740,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="823,100,752,53,716,35,719,30,754,48,826,95"/>
+<area shape="rect" id="Node000003" href="$unit__model_8cpp.html#a58654f9cb6a677f1504670fdc64b42da" title="Testa o método execute da classe Model." alt="" coords="421,56,558,83"/>
+<area shape="poly" id="edge8_Node000001_Node000003" title=" " alt="" coords="785,109,753,104,558,79,559,74,753,99,786,104"/>
+<area shape="rect" id="Node000007" href="$unit__model_8cpp.html#aa2fbf64beac74e56441034e50b26868a" title="Testa a construção de instâncias da classe Model." alt="" coords="411,107,568,133"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="785,123,568,123,568,117,785,117"/>
+<area shape="rect" id="Node000008" href="$unit__model_8cpp.html#abe94efff305f39a2aaabe07a7dff3805" title="Testa o método getTime da classe Model." alt="" coords="421,157,558,184"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="786,132,559,164,558,159,785,127"/>
+<area shape="rect" id="Node000009" href="$unit__model_8cpp.html#a51c707f72998e70e6e5dedb95c30714d" title="Testa o método setTime da classe Model." alt="" coords="616,208,753,235"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="826,145,754,192,719,210,716,205,752,187,823,140"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="616,39,544,58,543,53,615,34"/>
+<area shape="rect" id="Node000004" href="$unit__model_8cpp.html#a310f5d7d064c0c5d2e6423c9f3a463fb" title="Função que executa todos os testes unitários para a classe Model." alt="" coords="218,132,363,159"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="430,91,412,97,324,134,322,129,410,92,429,86"/>
+<area shape="rect" id="Node000005" href="$unit__test_8cpp.html#ad36c4b2c7080a1289f22f17233075394" title="unit testing function" alt="" coords="103,132,170,159"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,148,171,148,171,143,202,143"/>
+<area shape="rect" id="Node000006" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,132,55,159"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,148,55,148,55,143,87,143"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="397,135,364,139,363,133,396,129"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="405,163,364,157,364,152,406,157"/>
+<area shape="poly" id="edge12_Node000009_Node000004" title=" " alt="" coords="600,223,508,216,411,199,360,181,317,162,319,157,362,176,412,193,509,210,600,218"/>
+</map>

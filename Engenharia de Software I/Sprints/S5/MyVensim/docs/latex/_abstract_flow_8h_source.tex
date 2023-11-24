@@ -1,0 +1,40 @@
+\doxysection{Abstract\+Flow.\+h}
+\hypertarget{_abstract_flow_8h_source}{}\label{_abstract_flow_8h_source}\index{src/AbstractFlow.h@{src/AbstractFlow.h}}
+\mbox{\hyperlink{_abstract_flow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ABSTRACTFLOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ABSTRACTFLOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_abstract_system_8h}{AbstractSystem.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <stdlib.h>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstract_flow}{AbstractFlow}}\{}
+\DoxyCodeLine{00017\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_flow_a084d769af9503873b385a840200ff749}{\string~AbstractFlow}}()\{\};}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a8d64f0a2a1e316824c1d25985373ee0a}{setOrigin}}(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *origin\ )\ =\ 0;}
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}*\ \mbox{\hyperlink{class_abstract_flow_a5439bd4e39053661309a5d81b2e6556b}{getOrigin}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00042\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a74c1fc0f7eb33ffe8f2b0f239510c92a}{setDestiny}}(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *destiny\ )\ =\ 0;}
+\DoxyCodeLine{00048\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}*\ \mbox{\hyperlink{class_abstract_flow_ae1d8c27b38c6e3d8e772d17d6be8b094}{getDestiny}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a583938dc9e213a9f4ca1764c50d176d1}{setValue}}(\textcolor{keywordtype}{double}\ value)\ =\ 0;}
+\DoxyCodeLine{00061\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstract_flow_a9354df5a3f0a878528b7005d864b6bcf}{getValue}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00062\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a899e74d764cdf07629083a1638725b6e}{setName}}(\textcolor{keywordtype}{string}\ name)\ =\ 0;}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_abstract_flow_af566ce1e83fa1890c58021153d399a27}{getName}}()\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00075\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a25fbaed3f8c4168201481d1d6a074c0d}{setFunction}}(\textcolor{keywordtype}{double}\ (*function)(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *o,\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *d))\ =\ 0;}
+\DoxyCodeLine{00086\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_aed16e9e35ae87de7f102d99630938a93}{execute}}()\ =\ 0;}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00093\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_flow_a7ae4c248c6cb46b66799ddd548ff9dc4}{output}}(ostream\&\ out)\ \textcolor{keyword}{const}\ =\ 0;}
+\DoxyCodeLine{00094\ \};}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

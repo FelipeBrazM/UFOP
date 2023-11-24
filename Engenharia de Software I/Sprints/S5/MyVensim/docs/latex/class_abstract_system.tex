@@ -1,0 +1,172 @@
+\doxysection{Abstract\+System Class Reference}
+\hypertarget{class_abstract_system}{}\label{class_abstract_system}\index{AbstractSystem@{AbstractSystem}}
+
+
+Abstarct class that represent a \doxylink{class_system}{System}.  
+
+
+
+
+{\ttfamily \#include $<$Abstract\+System.\+h$>$}
+
+
+
+Inheritance diagram for Abstract\+System\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{class_abstract_system__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_abstract_system_a84819a9a9507e811dbae35cd27611a3b}{\texorpdfstring{$\sim$}{\string~}\+Abstract\+System}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the Abstract \doxylink{class_system}{System} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_system_a6b283d8c87c4db795bcf26ce1ad53298}{set\+Value}} (double value)=0
+\begin{DoxyCompactList}\small\item\em Set the Value object. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_abstract_system_a2d5c48654f99e6976fafe8b04ec102b3}{get\+Value}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the Value object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_system_a4dfad13b7de2526637af928cfbb534fc}{set\+Name}} (string name)=0
+\begin{DoxyCompactList}\small\item\em Set the Name object. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{class_abstract_system_a9a4e133d5defa1e23a7ae05cb70dc0f9}{get\+Name}} (void) const =0
+\begin{DoxyCompactList}\small\item\em Get the Name object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_abstract_system_ae5ed3eb3decb9e22eaf4a729aecbaab7}{saida}} (ostream \&out) const =0
+\begin{DoxyCompactList}\small\item\em string of out \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_abstract_system_a68c2bccf2431e4a69e1ca29b1e44c291}{operator$<$$<$}} (ostream \&, const \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \&)
+\begin{DoxyCompactList}\small\item\em \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} owerflow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstarct class that represent a \doxylink{class_system}{System}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_abstract_system_a84819a9a9507e811dbae35cd27611a3b}\label{class_abstract_system_a84819a9a9507e811dbae35cd27611a3b} 
+\index{AbstractSystem@{AbstractSystem}!````~AbstractSystem@{\texorpdfstring{$\sim$}{\string~}AbstractSystem}}
+\index{````~AbstractSystem@{\texorpdfstring{$\sim$}{\string~}AbstractSystem}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}AbstractSystem()}{\string~AbstractSystem()}}
+{\footnotesize\ttfamily virtual Abstract\+System\+::\texorpdfstring{$\sim$}{\string~}\+Abstract\+System (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Destroy the Abstract \doxylink{class_system}{System} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_abstract_system_a9a4e133d5defa1e23a7ae05cb70dc0f9}\label{class_abstract_system_a9a4e133d5defa1e23a7ae05cb70dc0f9} 
+\index{AbstractSystem@{AbstractSystem}!getName@{getName}}
+\index{getName@{getName}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily virtual string Abstract\+System\+::get\+Name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Name object. 
+
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_system_ad4e30bd34c25e18ad5243a42f3f02cb4}{System}}.
+
+\Hypertarget{class_abstract_system_a2d5c48654f99e6976fafe8b04ec102b3}\label{class_abstract_system_a2d5c48654f99e6976fafe8b04ec102b3} 
+\index{AbstractSystem@{AbstractSystem}!getValue@{getValue}}
+\index{getValue@{getValue}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily virtual double Abstract\+System\+::get\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get the Value object. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{class_system_a0d421958bf89d73ec47f6c1fb4f61b07}{System}}.
+
+\Hypertarget{class_abstract_system_ae5ed3eb3decb9e22eaf4a729aecbaab7}\label{class_abstract_system_ae5ed3eb3decb9e22eaf4a729aecbaab7} 
+\index{AbstractSystem@{AbstractSystem}!saida@{saida}}
+\index{saida@{saida}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{saida()}{saida()}}
+{\footnotesize\ttfamily virtual void Abstract\+System\+::saida (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+string of out 
+
+
+\begin{DoxyParams}{Parameters}
+{\em out} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_system_a99f3c77a21c97150fe068c093d346ed8}{System}}.
+
+\Hypertarget{class_abstract_system_a4dfad13b7de2526637af928cfbb534fc}\label{class_abstract_system_a4dfad13b7de2526637af928cfbb534fc} 
+\index{AbstractSystem@{AbstractSystem}!setName@{setName}}
+\index{setName@{setName}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily virtual void Abstract\+System\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Name object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_system_af9266231e352f4b45bdf4412afb76882}{System}}.
+
+\Hypertarget{class_abstract_system_a6b283d8c87c4db795bcf26ce1ad53298}\label{class_abstract_system_a6b283d8c87c4db795bcf26ce1ad53298} 
+\index{AbstractSystem@{AbstractSystem}!setValue@{setValue}}
+\index{setValue@{setValue}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily virtual void Abstract\+System\+::set\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Set the Value object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{class_system_a0fab907790a0a6ac4b4a9b934f3de278}{System}}.
+
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_abstract_system_a68c2bccf2431e4a69e1ca29b1e44c291}\label{class_abstract_system_a68c2bccf2431e4a69e1ca29b1e44c291} 
+\index{AbstractSystem@{AbstractSystem}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!AbstractSystem@{AbstractSystem}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_abstract_system}{Abstract\+System}} \&}]{system }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} owerflow 
+
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_abstract_system_8h}{Abstract\+System.\+h}}\end{DoxyCompactItemize}

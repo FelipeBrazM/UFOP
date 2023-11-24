@@ -1,0 +1,16 @@
+<map id="Model::setTime" name="Model::setTime">
+<area shape="rect" id="Node000001" title="Set the Time object." alt="" coords="755,31,865,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#ad76a68b7da76121d0bb6e8b628f4335c" title="function that runs the model" alt="" coords="597,5,707,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="739,35,707,30,708,25,740,30"/>
+<area shape="rect" id="Node000007" href="$unit__model_8cpp.html#a51c707f72998e70e6e5dedb95c30714d" title="Testa o método setTime da classe Model." alt="" coords="411,56,549,83"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="739,52,549,67,549,61,739,47"/>
+<area shape="rect" id="Node000003" href="$unit__model_8cpp.html#a58654f9cb6a677f1504670fdc64b42da" title="Testa o método execute da classe Model." alt="" coords="411,5,549,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="581,21,549,21,549,16,581,16"/>
+<area shape="rect" id="Node000004" href="$unit__model_8cpp.html#a310f5d7d064c0c5d2e6423c9f3a463fb" title="Função que executa todos os testes unitários para a classe Model." alt="" coords="218,31,363,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="396,33,364,37,364,32,396,27"/>
+<area shape="rect" id="Node000005" href="$unit__test_8cpp.html#ad36c4b2c7080a1289f22f17233075394" title="unit testing function" alt="" coords="103,31,170,57"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="202,47,171,47,171,41,202,41"/>
+<area shape="rect" id="Node000006" href="$test_2unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,31,55,57"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="87,47,55,47,55,41,87,41"/>
+<area shape="poly" id="edge7_Node000007_Node000004" title=" " alt="" coords="396,61,364,56,364,51,396,55"/>
+</map>

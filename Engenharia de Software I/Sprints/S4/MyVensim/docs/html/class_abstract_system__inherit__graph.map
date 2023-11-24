@@ -1,4 +1,5 @@
 <map id="AbstractSystem" name="AbstractSystem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,149,156"/>
-<area shape="rect" id="node2" href="$class_system.html" title="System that represents something that stores something." alt="" coords="30,204,125,413"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,139,181"/>
+<area shape="rect" id="Node000002" href="$class_system.html" title="System that represents something that stores something." alt="" coords="30,229,114,491"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,196,75,229,69,229,69,196"/>
 </map>

@@ -1,0 +1,5 @@
+<map id="Flow" name="Flow">
+<area shape="rect" id="node1" title="Flow connecting two Systems." alt="" coords="93,321,204,633"/>
+<area shape="rect" id="node2" href="$class_abstract_flow.html" title="Abstract class tha represente a Flow." alt="" coords="5,5,132,244"/>
+<area shape="rect" id="node3" href="$class_abstract_system.html" title="Abstarct class that represent a System." alt="" coords="157,49,301,200"/>
+</map>

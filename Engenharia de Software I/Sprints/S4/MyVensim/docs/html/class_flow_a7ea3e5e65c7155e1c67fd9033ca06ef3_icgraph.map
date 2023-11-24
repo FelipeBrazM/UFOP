@@ -1,0 +1,5 @@
+<map id="Flow::getValue" name="Flow::getValue">
+<area shape="rect" id="Node000001" title="Get the Value object." alt="" coords="146,5,253,32"/>
+<area shape="rect" id="Node000002" href="$class_flow.html#ad9f7f6f5e310266496d901084f3b49e6" title="Class of output default." alt="" coords="5,5,98,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,21,98,21,98,16,130,16"/>
+</map>

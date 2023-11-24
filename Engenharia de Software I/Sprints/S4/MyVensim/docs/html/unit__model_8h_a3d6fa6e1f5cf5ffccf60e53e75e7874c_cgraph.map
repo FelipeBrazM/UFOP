@@ -1,0 +1,7 @@
+<map id="unit_model_setTime" name="unit_model_setTime">
+<area shape="rect" id="Node000001" title="Testa o método setTime da classe Model." alt="" coords="5,31,143,57"/>
+<area shape="rect" id="Node000002" href="$class_model.html#a8694ee782322ce3f1d583bafc37ef4a4" title="Get the Time object." alt="" coords="191,5,301,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,31,175,26,175,32,144,36"/>
+<area shape="rect" id="Node000003" href="$class_model.html#ac1cfa9230249cab38c522785555facf0" title="Set the Time object." alt="" coords="191,56,301,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,52,175,56,175,62,143,57"/>
+</map>

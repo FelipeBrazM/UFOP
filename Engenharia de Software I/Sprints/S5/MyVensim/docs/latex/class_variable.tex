@@ -1,0 +1,210 @@
+\hypertarget{class_variable}{}\doxysection{Variable Class Reference}
+\label{class_variable}\index{Variable@{Variable}}
+
+
+Variables that can affect Systems and Flows.  
+
+
+
+
+{\ttfamily \#include $<$Variable.\+h$>$}
+
+
+
+Inheritance diagram for Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_variable__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_variable__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}{Variable}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_variable_a6756daaf2bd85f41faa18344c0f66acf}{Variable}} (double value, string \mbox{\hyperlink{class_element_a63e156c168905a24437098bfff0e5366}{name}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_variable_a49e7d7997a4515e68118e77f4738a236}{Variable}} (const \mbox{\hyperlink{class_variable}{Variable}} \&var)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_variable_acfc14d0ad77af53025f890b4d3a7745a}{$\sim$\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_variable}{Variable}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_variable_a53f9fcc222b5821b0c474b52037d5516}{set\+Initial\+Value}} (double)
+\begin{DoxyCompactList}\small\item\em Set the Initial Value object. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_variable_a2e6014b259e6721c1f5fa728129ec52f}{get\+Initial\+Value}} (void) const
+\begin{DoxyCompactList}\small\item\em Get the Initial Value object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_variable_a07ec295e20ad8f370797e050caa865f0}{add\+Out}} (\mbox{\hyperlink{class_element}{Element}} $\ast$element)
+\begin{DoxyCompactList}\small\item\em Adds elements to the Elements vector that the variable points to. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_variable_a5b82cb9e4e242171963fdcb0d7fafe80}{saida}} (ostream \&) const
+\begin{DoxyCompactList}\small\item\em Class of output default. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_variable_abf2e13f833da419ab3acd6678038a57c}{initial\+Value}}
+\item 
+vector$<$ \mbox{\hyperlink{class_element}{Element}} $\ast$ $>$ \mbox{\hyperlink{class_variable_a7fcee385d048fae962f65809306ad95b}{out}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \mbox{\hyperlink{class_variable_a27eb22c9f5ec0f8a9c5aff938dab7ecc}{operator$<$$<$}} (ostream \&, const \mbox{\hyperlink{class_variable}{Variable}} \&)
+\begin{DoxyCompactList}\small\item\em cout operator overload \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Variables that can affect Systems and Flows. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}\label{class_variable_a5716c9dcafcc8cf59a6f6b5dac3ec7a2}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. 
+
+\mbox{\Hypertarget{class_variable_a6756daaf2bd85f41faa18344c0f66acf}\label{class_variable_a6756daaf2bd85f41faa18344c0f66acf}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & initial value \\
+\hline
+{\em name} & system name \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_variable_a49e7d7997a4515e68118e77f4738a236}\label{class_variable_a49e7d7997a4515e68118e77f4738a236}} 
+\index{Variable@{Variable}!Variable@{Variable}}
+\index{Variable@{Variable}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{Variable()}{Variable()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Variable\+::\+Variable (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_variable}{Variable}} \&}]{var }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_variable}{Variable}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em var} & \mbox{\hyperlink{class_variable}{Variable}} to be copied \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_variable_acfc14d0ad77af53025f890b4d3a7745a}\label{class_variable_acfc14d0ad77af53025f890b4d3a7745a}} 
+\index{Variable@{Variable}!````~Variable@{$\sim$Variable}}
+\index{````~Variable@{$\sim$Variable}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{$\sim$Variable()}{~Variable()}}
+{\footnotesize\ttfamily Variable\+::$\sim$\+Variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_variable}{Variable}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_variable_a07ec295e20ad8f370797e050caa865f0}\label{class_variable_a07ec295e20ad8f370797e050caa865f0}} 
+\index{Variable@{Variable}!addOut@{addOut}}
+\index{addOut@{addOut}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{addOut()}{addOut()}}
+{\footnotesize\ttfamily void Variable\+::add\+Out (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_element}{Element}} $\ast$}]{element }\end{DoxyParamCaption})}
+
+
+
+Adds elements to the Elements vector that the variable points to. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element$\ast$} & element to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_variable_a2e6014b259e6721c1f5fa728129ec52f}\label{class_variable_a2e6014b259e6721c1f5fa728129ec52f}} 
+\index{Variable@{Variable}!getInitialValue@{getInitialValue}}
+\index{getInitialValue@{getInitialValue}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{getInitialValue()}{getInitialValue()}}
+{\footnotesize\ttfamily double Variable\+::get\+Initial\+Value (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Initial Value object. 
+
+\begin{DoxyReturn}{Returns}
+double 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_variable_a5b82cb9e4e242171963fdcb0d7fafe80}\label{class_variable_a5b82cb9e4e242171963fdcb0d7fafe80}} 
+\index{Variable@{Variable}!saida@{saida}}
+\index{saida@{saida}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{saida()}{saida()}}
+{\footnotesize\ttfamily void Variable\+::saida (\begin{DoxyParamCaption}\item[{ostream \&}]{out }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Class of output default. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_element_af713cb4c4d9a3f5415b45a6e9246f9a3}{Element}}.
+
+\mbox{\Hypertarget{class_variable_a53f9fcc222b5821b0c474b52037d5516}\label{class_variable_a53f9fcc222b5821b0c474b52037d5516}} 
+\index{Variable@{Variable}!setInitialValue@{setInitialValue}}
+\index{setInitialValue@{setInitialValue}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{setInitialValue()}{setInitialValue()}}
+{\footnotesize\ttfamily void Variable\+::set\+Initial\+Value (\begin{DoxyParamCaption}\item[{double}]{value }\end{DoxyParamCaption})}
+
+
+
+Set the Initial Value object. 
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{class_variable_a27eb22c9f5ec0f8a9c5aff938dab7ecc}\label{class_variable_a27eb22c9f5ec0f8a9c5aff938dab7ecc}} 
+\index{Variable@{Variable}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily ostream \& operator$<$$<$ (\begin{DoxyParamCaption}\item[{ostream \&}]{out,  }\item[{const \mbox{\hyperlink{class_variable}{Variable}} \&}]{variable }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+cout operator overload 
+
+\begin{DoxyReturn}{Returns}
+ostream\& 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{class_variable_abf2e13f833da419ab3acd6678038a57c}\label{class_variable_abf2e13f833da419ab3acd6678038a57c}} 
+\index{Variable@{Variable}!initialValue@{initialValue}}
+\index{initialValue@{initialValue}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{initialValue}{initialValue}}
+{\footnotesize\ttfamily double Variable\+::initial\+Value\hspace{0.3cm}{\ttfamily [protected]}}
+
+variable initial value \mbox{\Hypertarget{class_variable_a7fcee385d048fae962f65809306ad95b}\label{class_variable_a7fcee385d048fae962f65809306ad95b}} 
+\index{Variable@{Variable}!out@{out}}
+\index{out@{out}!Variable@{Variable}}
+\doxysubsubsection{\texorpdfstring{out}{out}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{class_element}{Element}} $\ast$$>$ Variable\+::out\hspace{0.3cm}{\ttfamily [protected]}}
+
+Vector of elements to which the variable points 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_variable_8h}{Variable.\+h}}\item 
+src/\mbox{\hyperlink{_variable_8cpp}{Variable.\+cpp}}\end{DoxyCompactItemize}

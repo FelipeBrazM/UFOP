@@ -1,0 +1,11 @@
+<map id="unit_system_constructor" name="unit_system_constructor">
+<area shape="rect" id="Node000001" title="Testa a construção de instâncias da classe System." alt="" coords="5,81,170,108"/>
+<area shape="rect" id="Node000002" href="$class_system.html#ad4e30bd34c25e18ad5243a42f3f02cb4" title="Get the Name object." alt="" coords="242,5,369,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="121,78,217,41,238,35,240,40,219,47,123,83"/>
+<area shape="rect" id="Node000003" href="$class_abstract_system.html#a9a4e133d5defa1e23a7ae05cb70dc0f9" title=" " alt="" coords="218,56,393,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,82,202,79,202,84,170,88"/>
+<area shape="rect" id="Node000004" href="$class_system.html#a0d421958bf89d73ec47f6c1fb4f61b07" title="Get the Initial Value object." alt="" coords="243,107,368,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,102,227,108,227,114,170,107"/>
+<area shape="rect" id="Node000005" href="$class_abstract_system.html#a2d5c48654f99e6976fafe8b04ec102b3" title=" " alt="" coords="218,157,393,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="123,106,219,143,240,150,238,155,217,148,121,111"/>
+</map>

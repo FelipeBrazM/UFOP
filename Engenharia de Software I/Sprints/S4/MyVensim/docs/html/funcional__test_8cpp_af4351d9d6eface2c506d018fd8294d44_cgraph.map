@@ -1,0 +1,5 @@
+<map id="logistica" name="logistica">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,75,32"/>
+<area shape="rect" id="Node000002" href="$class_abstract_system.html#a2d5c48654f99e6976fafe8b04ec102b3" title=" " alt="" coords="123,5,297,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,16,107,16,107,21,75,21"/>
+</map>

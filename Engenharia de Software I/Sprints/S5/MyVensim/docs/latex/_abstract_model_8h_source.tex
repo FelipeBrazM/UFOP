@@ -1,0 +1,46 @@
+\doxysection{Abstract\+Model.\+h}
+\hypertarget{_abstract_model_8h_source}{}\label{_abstract_model_8h_source}\index{src/AbstractModel.h@{src/AbstractModel.h}}
+\mbox{\hyperlink{_abstract_model_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ABSTRACT\_MODEL\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ABSTRACT\_MODEL\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_abstract_system_8h}{AbstractSystem.h}}"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_abstract_flow_8h}{AbstractFlow.h}}"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_abstract_model}{AbstractModel}}\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_model_a2dfad9d74d70d03146a68f0fcd73eca7}{add}}(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}*\ \textcolor{keyword}{const}\ s)\ =\ 0;}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_model_a72a809026f1ea524c07c0f5c413c4e20}{add}}(\mbox{\hyperlink{class_abstract_flow}{AbstractFlow}}*\ \textcolor{keyword}{const}\ f)\ =\ 0;}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00037\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_model_ac60bc3fdb72701a5ef2b7bcc867f9870}{\string~AbstractModel}}()\{\};}
+\DoxyCodeLine{00038\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_abstract_model_ae59d88ea30f596d922d74191223ee27b}{getSystensSize}}()\ =\ 0;}
+\DoxyCodeLine{00050\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_abstract_model_a4e6e5641dc07c35507bbaf52287a0e46}{getFlowsSize}}()\ =\ 0;}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_model_a1050ea8b353263c80b24fc693f255a10}{setTime}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ time)\ =\ 0;}
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_abstract_model_a7abd8663355ecd10b85e28d3b53784a2}{getTime}}()\ =\ 0;}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00070\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_abstract_model_a17363242906dbdb059eb95a57c6af9f0}{setName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ name)\ =\ 0;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_abstract_model_a4b84d1692a1276073655df8eca40860f}{getName}}()\ =\ 0;}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}*\ \mbox{\hyperlink{class_abstract_model_ada6b9dd6d0ccec7e81d6fb4309d45107}{createSystem}}(\textcolor{keywordtype}{double}\ value\ =\ 0.0,\ \textcolor{keywordtype}{string}\ name\ =\ \textcolor{stringliteral}{"{}"{}})\ =\ 0;}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00096\ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_abstract_flow}{AbstractFlow}}*\ \mbox{\hyperlink{class_abstract_model_a90e50bccd7bd31c584e2073edc20a44c}{createFlow}}(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *origin\ ,\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *destiny\ ,\ \textcolor{keywordtype}{double}\ (*function)(\mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *o,\ \mbox{\hyperlink{class_abstract_system}{AbstractSystem}}\ *d),\ \textcolor{keywordtype}{string}\ name)\ =\ 0;}
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00105\ \ \ \ \ \textcolor{keyword}{static}\ \mbox{\hyperlink{class_abstract_model}{AbstractModel}}*\ \mbox{\hyperlink{class_abstract_model_a7382dd8a8ed7621e8c6fb6a018e9ac42}{createModel}}(\textcolor{keywordtype}{string}\ name\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keywordtype}{double}\ time\ =\ 0.0);}
+\DoxyCodeLine{00106\ \ \ \ \ }
+\DoxyCodeLine{00116\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_abstract_model_a64a65151c14a4020fb6153b04caf5066}{execute}}(\textcolor{keywordtype}{double}\ initialTime,\ \textcolor{keywordtype}{double}\ finalTime,\ \textcolor{keywordtype}{double}\ timeStep)\ =\ 0;}
+\DoxyCodeLine{00117\ }
+\DoxyCodeLine{00118\ \};}
+\DoxyCodeLine{00119\ }
+\DoxyCodeLine{00120\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

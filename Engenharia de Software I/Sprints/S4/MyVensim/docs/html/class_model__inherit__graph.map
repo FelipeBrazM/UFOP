@@ -1,4 +1,5 @@
 <map id="Model" name="Model">
-<area shape="rect" id="node1" title="Model class that stores the systems, flows and variables." alt="" coords="5,263,140,560"/>
-<area shape="rect" id="node2" href="$class_abstract_model.html" title=" " alt="" coords="5,5,140,215"/>
+<area shape="rect" id="Node000001" title="Model class that stores the systems, flows and variables." alt="" coords="5,315,129,704"/>
+<area shape="rect" id="Node000002" href="$class_abstract_model.html" title=" " alt="" coords="5,5,129,267"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="70,282,70,315,65,315,65,282"/>
 </map>
