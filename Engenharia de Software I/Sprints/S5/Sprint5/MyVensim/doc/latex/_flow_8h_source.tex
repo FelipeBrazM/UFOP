@@ -1,0 +1,44 @@
+\hypertarget{_flow_8h_source}{}\doxysection{Flow.\+h}
+\label{_flow_8h_source}\index{src/Flow.h@{src/Flow.h}}
+\mbox{\hyperlink{_flow_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ FLOW\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ FLOW\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_system_8h}{System.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_flow}{Flow}}\{}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keyword}{protected}:}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}};}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{systemInput}};}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{systemOutput}};}
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}};}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_flow}{Flow}}\&\ copy);\ \textcolor{comment}{//\ copy\ constructor}}
+\DoxyCodeLine{00032\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flow}{Flow}}\&\ \mbox{\hyperlink{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2}{operator=\ }}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_flow}{Flow}}\&\ f);\ \textcolor{comment}{//\ copy\ assignment\ operator}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00039\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}();\ \textcolor{comment}{//\ empty\ constructor}}
+\DoxyCodeLine{00048\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{systemInput}},\ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{systemOutput}},\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}});\ \textcolor{comment}{//\ constructor}}
+\DoxyCodeLine{00053\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{\string~Flow}}();\ \textcolor{comment}{//\ destructor}}
+\DoxyCodeLine{00054\ }
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{getName}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ name\ getters\ and\ setters}}
+\DoxyCodeLine{00066\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_a8a6ee4d4d488e08e8d6fbe1bdb5c14ef}{setName}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}});}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_a127ecf51b93c6dbd01fa241449bef7f1}{getSystemInput}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ system\ input\ getters\ and\ setters}}
+\DoxyCodeLine{00079\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_aa91c8b153b66cb3e6cfe792c1371e4fe}{setSystemInput}}(\mbox{\hyperlink{class_system}{System}}*\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{systemInput}});}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_system}{System}}\ *\mbox{\hyperlink{class_flow_a1effc232bc58cd298220c153a10e2bbc}{getSystemOutput}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ system\ output\ getters\ and\ setters}}
+\DoxyCodeLine{00092\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_aa2b4be7c4e648c2a2f2bb06f54ec8be7}{setSystemOutput}}(\mbox{\hyperlink{class_system}{System}}*\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{systemOutput}});}
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00099\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_ac3427b4d1f625d563e7662025d898ef5}{getTax}}()\ \textcolor{keyword}{const};\ \textcolor{comment}{//\ tax\ getters\ and\ setters}}
+\DoxyCodeLine{00105\ \textcolor{comment}{}\ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_flow_a7bbca84e9c9fa86ab89c4dc7a5f5d421}{setTax}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}});}
+\DoxyCodeLine{00106\ }
+\DoxyCodeLine{00112\ \ \ \ \ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{execute}}()\ =\ 0;}
+\DoxyCodeLine{00113\ \};}
+\DoxyCodeLine{00114\ }
+\DoxyCodeLine{00115\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

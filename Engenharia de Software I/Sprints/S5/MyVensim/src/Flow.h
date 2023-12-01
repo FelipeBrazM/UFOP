@@ -22,7 +22,6 @@ protected:
     AbstractSystem *destiny;
     double value;
     string name;
-	double (*function)(AbstractSystem* const o, AbstractSystem* const d);
 
 private:
     /**
@@ -45,10 +44,9 @@ public:
      * 
      * @param origin source AbstractSystem
      * @param destiny target AbstractSystem
-     * @param function function that governs the flow
      * @param name flow name
      */
-    Flow(AbstractSystem *origin , AbstractSystem *destiny , double (*function)(AbstractSystem *o, AbstractSystem *d), string name);
+    Flow(AbstractSystem *origin , AbstractSystem *destiny , string name);
 
     /**
      * @brief Construct a new Flow object
@@ -113,12 +111,6 @@ public:
      */
     string getName(void) const;
 
-    /**
-     * @brief Set the Function object
-     * 
-     * @param function 
-     */
-    void setFunction(double (*function)(AbstractSystem *o, AbstractSystem *d));
     /**
      * @brief Execute function to add to value
      * 

@@ -1,0 +1,7 @@
+<map id="unit_Flow_constructor" name="unit_Flow_constructor">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,155,105"/>
+<area shape="rect" id="node2" href="$class_flow.html#aa91a8025b6dbb27ee5137c7c9ad0c564" title="Get the Name of a Flow object." alt="" coords="227,5,337,31"/>
+<area shape="rect" id="node3" href="$class_flow.html#a2f9936166fba3f5bd28f3d38ecee5f77" title="get source or input system" alt="" coords="208,55,356,80"/>
+<area shape="rect" id="node4" href="$class_flow.html#a9e6edca166b2d1ba709fb4d7862b4c0f" title="get destination or output system" alt="" coords="203,104,361,129"/>
+<area shape="rect" id="node5" href="$class_flow.html#a44b7bfae86125b854612f08f7b129ce1" title="Get the tax of a flow (value after execution)" alt="" coords="234,153,330,179"/>
+</map>

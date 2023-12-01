@@ -1,0 +1,12 @@
+<map id="unit_Model_removal" name="unit_Model_removal">
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,141,155"/>
+<area shape="rect" id="node2" href="$class_model.html#a5aa7e102e7f0b090273d79bbf41c138d" title="Create a Flow object by fabric." alt="" coords="199,5,327,31"/>
+<area shape="rect" id="node4" href="$class_model.html#a12247b490ffc434694463297cf333a1c" title="Create a Model object by fabric." alt="" coords="195,55,331,80"/>
+<area shape="rect" id="node7" href="$class_model.html#a4fab2376431398d7ce488bd23c174ca6" title="Create a System object by fabric." alt="" coords="189,104,336,129"/>
+<area shape="rect" id="node8" href="$class_model.html#a575543d93868456ac9f5df2795ed614f" title="remove a system from container" alt="" coords="208,153,317,179"/>
+<area shape="rect" id="node9" href="$class_model.html#aba61699ad293ccedde123ab1289d1653" title="begin Iterator for the systems container" alt="" coords="192,203,333,228"/>
+<area shape="rect" id="node10" href="$class_model.html#ad421033f75965f4ad7d556d00b15decb" title="end Iterator for the systems container" alt="" coords="197,252,328,277"/>
+<area shape="rect" id="node3" href="$class_model.html#ab7df81041f62f049cfc6e4d50dcaf721" title="add a flow to container" alt="" coords="421,5,507,31"/>
+<area shape="rect" id="node5" href="$class_model_impl.html#a0f66099887e66d1ff135f0934c487c32" title="Create a Model object by fabric." alt="" coords="384,55,544,80"/>
+<area shape="rect" id="node6" href="$class_model_impl.html#a081505846c37ce9928f2176d77db4bc8" title="empty constructor" alt="" coords="592,55,740,80"/>
+</map>

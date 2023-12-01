@@ -1,0 +1,11 @@
+<map id="unit_Model_systemBegin" name="unit_Model_systemBegin">
+<area shape="rect" id="node1" title=" " alt="" coords="5,80,173,105"/>
+<area shape="rect" id="node2" href="$class_model.html#a12247b490ffc434694463297cf333a1c" title="Create a Model object by fabric." alt="" coords="227,5,363,31"/>
+<area shape="rect" id="node5" href="$class_model.html#a4fab2376431398d7ce488bd23c174ca6" title="Create a System object by fabric." alt="" coords="221,55,368,80"/>
+<area shape="rect" id="node6" href="$class_model.html#afce0a56f7904d21ca49066b6798f0c40" title="delete models created by fabric" alt="" coords="227,104,362,129"/>
+<area shape="rect" id="node9" href="$class_model.html#aba61699ad293ccedde123ab1289d1653" title="begin Iterator for the systems container" alt="" coords="224,153,365,179"/>
+<area shape="rect" id="node3" href="$class_model_impl.html#a0f66099887e66d1ff135f0934c487c32" title="Create a Model object by fabric." alt="" coords="416,5,576,31"/>
+<area shape="rect" id="node4" href="$class_model_impl.html#a081505846c37ce9928f2176d77db4bc8" title="empty constructor" alt="" coords="624,5,772,31"/>
+<area shape="rect" id="node7" href="$class_model_impl.html#abbf5c1f0acf2a48af23683c1917bfa74" title=" " alt="" coords="417,104,575,129"/>
+<area shape="rect" id="node8" href="$class_model_impl.html#a2bcd81c1fa2a98fa353ea10ba9c18e83" title="remove a system from container" alt="" coords="631,104,765,129"/>
+</map>

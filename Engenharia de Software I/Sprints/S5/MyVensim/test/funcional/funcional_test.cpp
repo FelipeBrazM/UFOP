@@ -11,15 +11,26 @@
 
 using namespace std;
 
-double exponencial(AbstractSystem* const origin, AbstractSystem* const destiny) {
-    AbstractSystem *pop1 = origin;
-    return 0.01 * pop1->getValue();
-}
+class Exponential : public Flow{
 
-double logistica (AbstractSystem* const o, AbstractSystem* const destiny) {
-    AbstractSystem *p2 = destiny;
-    return 0.01 * p2->getValue() * (1 - (p2->getValue() / 70));
-}
+    public:
+    /**
+     * @brief Construct a new Exponential object
+     * 
+     * @param name name of the Exponential Flow
+     * @param input source or input of the Exponential Flow
+     * @param output target or output of the Exponential Flow
+     */
+    Exponential(System* origin=NULL, System* destiny=NULL, const string name="") : Flow(name, input, output, 0.0) {}
+    /**
+     * @brief extended execution function
+     * 
+     * @return double value of the extended execution function
+     */
+    virtual double execute(){
+        return 0.01 * systemInput->getValue();
+    }
+};
 
 void exponentialFuncionalTest() {
 
@@ -28,7 +39,7 @@ void exponentialFuncionalTest() {
     AbstractSystem *pop1 = modelo->createSystem(100.0, "pop1");
     AbstractSystem *pop2 = modelo->createSystem(0.0, "pop2");
 
-    modelo->createFlow(pop1, pop2, exponencial, "FluxoExponencial");
+    modelo->createFlow(pop1, pop2, "FluxoExponencial");
 
     modelo->execute(0.0, 100, 1);
 
@@ -39,6 +50,7 @@ void exponentialFuncionalTest() {
     delete modelo;
 }
 
+
 void logisticalFuncionalTest() {
 
     AbstractModel *modelo = AbstractModel::createModel("Modelo2", 0.0);
@@ -46,7 +58,7 @@ void logisticalFuncionalTest() {
     AbstractSystem *p1 = modelo->createSystem(100.0, "p1");
     AbstractSystem *p2 = modelo->createSystem(10.0, "p2");
 
-    modelo->createFlow(p1, p2, logistica, "FluxoLogistica");
+    modelo->createFlow(p1, p2, "FluxoLogistica");
 
     modelo->execute(0.0, 100, 1);
 

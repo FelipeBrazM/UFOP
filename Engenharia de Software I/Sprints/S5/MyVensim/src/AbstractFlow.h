@@ -75,12 +75,6 @@ public:
     virtual string getName() const = 0;
 
     /**
-     * @brief Set the Function object
-     * 
-     * @param function 
-     */
-    virtual void setFunction(double (*function)(AbstractSystem *o, AbstractSystem *d)) = 0;
-    /**
      * @brief 
      * 
      */

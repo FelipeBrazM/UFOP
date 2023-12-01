@@ -88,12 +88,6 @@ AbstractSystem* Model::createSystem(double value, string name){
 	return sys;
 }
 
-AbstractFlow* Model::createFlow(AbstractSystem *origin , AbstractSystem *destiny , double (*function)(AbstractSystem *o, AbstractSystem *d), string name){
-	AbstractFlow *flw = new Flow(origin, destiny, function, name);
-	add(flw);
-	return flw;
-}
-
 AbstractModel* AbstractModel::createModel(string name, double time){
 	return Model::createModel(name, time);
 }

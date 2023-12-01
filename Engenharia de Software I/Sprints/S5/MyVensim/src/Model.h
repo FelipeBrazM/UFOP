@@ -128,15 +128,23 @@ public:
      * @param name flow name 
 	 * @return AbstractFlow* 
 	 */
-	AbstractFlow* createFlow(AbstractSystem *origin , AbstractSystem *destiny , double (*function)(AbstractSystem *o, AbstractSystem *d), string name);
 
 	/**
-	 * @brief Create a Model object
-	 * 
-	 * @param name model name
-	 * @param time model time 
-	 * @return AbstractModel*
-	 */
+		* @brief Create a Flow object by fabric
+		* 
+		* @tparam FlowImplemented template for flows created by user
+		* @param name name of the Flow created
+		* @param origin origin or source of the flow created
+		* @param destiny destiny or target of the flow created
+		* @return Flow* pointer to the Flow created
+		*/
+	template <typename FlowImplemented>
+	Flow* createFlow(System* origin=NULL, System* destiny=NULL, const string name=""){
+		Flow* flow = new FlowImplemented(name, origin, destiny);
+		add(flow);
+		return flow;
+	}
+	
 	static AbstractModel* createModel(string name = "", double time = 0.0);
 
 	/**

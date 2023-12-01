@@ -1,0 +1,8 @@
+<map id="Flow::getTax" name="Flow::getTax">
+<area shape="rect" id="node1" title="Get the tax of a flow (value after execution)" alt="" coords="488,55,584,80"/>
+<area shape="rect" id="node2" href="$unit__flow_8cpp.html#a4b6e7371ad9b3059a32e0b1600e653a3" title=" " alt="" coords="291,5,440,31"/>
+<area shape="rect" id="node5" href="$unit__flow_8cpp.html#a35b60f05d1ca48a720f79e200826ceb2" title=" " alt="" coords="304,55,427,80"/>
+<area shape="rect" id="node6" href="$unit__flow_8cpp.html#a08cb269969c8430f3d95f9b245183a8d" title=" " alt="" coords="304,104,427,129"/>
+<area shape="rect" id="node3" href="$unit__flow_8cpp.html#ad22590f3fd206c1de5ae1a673917de8c" title=" " alt="" coords="104,55,243,80"/>
+<area shape="rect" id="node4" href="$unit_2main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,55,56,80"/>
+</map>

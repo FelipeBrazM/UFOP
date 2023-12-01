@@ -1,0 +1,8 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$class_flow.html" title="Flow interface for the user." alt="" coords="5,80,55,105"/>
+<area shape="rect" id="node2" href="$class_flow_impl.html" title="Flows abstract class." alt="" coords="103,80,176,105"/>
+<area shape="rect" id="node3" href="$class_complex_flow.html" title="Class for complex test (funcional test)" alt="" coords="224,5,324,31"/>
+<area shape="rect" id="node4" href="$class_exponential.html" title="Class for exponential test (funcional test)" alt="" coords="229,55,319,80"/>
+<area shape="rect" id="node5" href="$class_logistic.html" title="Class for logistic test (funcional test)" alt="" coords="241,104,307,129"/>
+<area shape="rect" id="node6" href="$class_testflow.html" title=" " alt="" coords="239,153,309,179"/>
+</map>

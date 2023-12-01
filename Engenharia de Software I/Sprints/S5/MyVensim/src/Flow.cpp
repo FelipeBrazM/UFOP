@@ -10,14 +10,12 @@
 Flow::Flow(){
     origin = NULL;
     destiny = NULL;
-    function = NULL;
     name = "";
 }
 
-Flow::Flow(AbstractSystem *origin = NULL, AbstractSystem *destiny = NULL, double (*function)(AbstractSystem *o, AbstractSystem *d) = NULL, string name = ""){
+Flow::Flow(AbstractSystem *origin = NULL, AbstractSystem *destiny = NULL, string name = ""){
     this->origin = origin;
     this->destiny = destiny;
-    this->function = function;
     this->name = name;
 }
 
@@ -25,7 +23,6 @@ Flow::Flow(const Flow& f){
     origin = f.origin;
     destiny = f.destiny;
     value = f.value;
-    function = f.function;
     name = f.name;
 }
 
@@ -39,7 +36,6 @@ Flow& Flow::operator= (const Flow& f) {
 	origin = f.origin;
 	destiny = f.destiny;
 	value= f.value;
-	function = f.function;
     name = f.name;
 
 	return *this;
@@ -73,11 +69,8 @@ string Flow::getName(void) const{
     return this->name;
 }
 
-void Flow::setFunction(double (*function)(AbstractSystem *o, AbstractSystem *d)){
-    this->function = function;
-}
 void Flow::execute(){
-    this->setValue(this->function(this->origin, this->destiny));
+    this->setValue(this->origin, this->destiny);
 }
 
 void Flow::output(ostream& out) const{
