@@ -1,3 +1,5 @@
+// Felipe Braz Marques - 22.1.4030
+
 #include "Model.h"
 
 #include <stdlib.h>
@@ -54,6 +56,7 @@ Model& Model::operator= (const Model& m) {
 void Model::add(AbstractSystem* const s){
     this->systens.push_back(s);
 }
+
 void Model::add(AbstractFlow* const f){
     this->flows.push_back(f);
 }

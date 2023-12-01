@@ -8,5 +8,5 @@ digraph "test/funcional/funcional_test.h"
   Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
   Node2 [id="Node000002",label="test/funcional/funcional\l_test.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$funcional__test_8cpp.html",tooltip=" "];
   Node1 -> Node3 [id="edge2_Node000001_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
-  Node3 [id="Node000003",label="test/funcional/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$test_2funcional_2main_8cpp.html",tooltip=" "];
+  Node3 [id="Node000003",label="test/funcional/main.cpp",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$funcional_2main_8cpp.html",tooltip=" "];
 }

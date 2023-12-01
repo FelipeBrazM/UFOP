@@ -1,3 +1,5 @@
+// Felipe Braz Marques - 22.1.4030
+
 #ifndef MODEL_H
 #define MODEL_H
 
@@ -19,7 +21,7 @@ protected:
 	double time;/**< Model time*/
 	vector<AbstractSystem*> systens;/**< Systens contained in the model*/
 	vector<AbstractFlow*> flows;/**< Flows contained in the model*/
-	static vector<AbstractModel*> models;/**<*/
+	static vector<AbstractModel*> models;
 	
 	/**
 	 * @brief Add System to the model
