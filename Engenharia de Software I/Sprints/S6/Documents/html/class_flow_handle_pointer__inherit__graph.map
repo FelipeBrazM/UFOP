@@ -1,0 +1,11 @@
+<map id="FlowHandlePointer" name="FlowHandlePointer">
+<area shape="rect" id="node1" title=" " alt="" coords="309,263,467,487"/>
+<area shape="rect" id="node4" href="$class_complex_flow.html" title="Class for complex test (funcional test)" alt="" coords="5,564,125,656"/>
+<area shape="rect" id="node5" href="$class_exponential.html" title="Class for exponential test (funcional test)" alt="" coords="150,564,261,656"/>
+<area shape="rect" id="node6" href="$class_flow_exp.html" title=" " alt="" coords="285,564,377,656"/>
+<area shape="rect" id="node7" href="$class_flow_log.html" title=" " alt="" coords="401,564,492,656"/>
+<area shape="rect" id="node8" href="$class_logistic.html" title="Class for logistic test (funcional test)" alt="" coords="516,564,604,656"/>
+<area shape="rect" id="node9" href="$class_testflow.html" title=" " alt="" coords="629,535,726,685"/>
+<area shape="rect" id="node2" href="$class_flow.html" title="Flow interface for the user." alt="" coords="233,5,377,215"/>
+<area shape="rect" id="node3" href="$class_handle.html" title=" " alt="" coords="402,49,539,171"/>
+</map>

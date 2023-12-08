@@ -1,0 +1,9 @@
+<map id="ComplexFlow" name="ComplexFlow">
+<area shape="rect" id="node1" title="Class for complex test (funcional test)" alt="" coords="33,1052,153,1144"/>
+<area shape="rect" id="node2" href="$class_flow_handle_pointer.html" title=" " alt="" coords="14,779,173,1003"/>
+<area shape="rect" id="node3" href="$class_flow.html" title="Flow interface for the user." alt="" coords="5,520,149,729"/>
+<area shape="rect" id="node4" href="$class_handle.html" title=" " alt="" coords="174,564,311,685"/>
+<area shape="rect" id="node5" href="$class_flow_impl.html" title="Flows abstract class." alt="" coords="171,219,315,457"/>
+<area shape="rect" id="node6" href="$class_body.html" title="The class Implementation was implemented based on the class teCounted writed by Ricardo Cartaxo and G..." alt="" coords="139,5,229,141"/>
+<area shape="rect" id="node7" href="$class_system.html" title="System interface for user." alt="" coords="254,5,349,141"/>
+</map>

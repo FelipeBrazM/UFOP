@@ -1,0 +1,345 @@
+\hypertarget{class_model}{}\doxysection{Model Class Reference}
+\label{class_model}\index{Model@{Model}}
+
+
+\mbox{\hyperlink{class_model}{Model}} representation class.  
+
+
+
+
+{\ttfamily \#include $<$Model.\+h$>$}
+
+
+
+Collaboration diagram for Model\+:
+% FIG 0
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef vector$<$ \mbox{\hyperlink{class_system}{System}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{system\+Iterator}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{class_flow}{Flow}} $\ast$ $>$\+::iterator \mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{flow\+Iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_model_ae3b375de5f6df4faf74a95d64748e048}{Model}} ()
+\begin{DoxyCompactList}\small\item\em empty constructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ae50c01e8143e723f8fffa3f90704180e}{Model}} (const string name, const double time\+Initial, const double time\+Final)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_model}{Model}} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_model_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_model}{Model}} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_model_a65e1711255fbab5883708002ef89f773}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the Name of a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}{set\+Name}} (const string name)
+\begin{DoxyCompactList}\small\item\em Set the Name of a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_model_aadad322b808f42f84a2d16f59abe475b}{get\+Time\+Initial}} () const
+\begin{DoxyCompactList}\small\item\em Get the Time Initial for a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a8b61e786c2da4f29fea5d2ca68b30966}{set\+Time\+Initial}} (const double time\+Initial)
+\begin{DoxyCompactList}\small\item\em Set the Time Initial for a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_model_a3d20b079e3979d924453e44a459611af}{get\+Time\+Final}} () const
+\begin{DoxyCompactList}\small\item\em Get the Time Final for a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_adf1500bee936dc8dee78c075f67f9637}{set\+Time\+Final}} (const double time\+Final)
+\begin{DoxyCompactList}\small\item\em Set the Time Final for a \mbox{\hyperlink{class_model}{Model}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a302d4ed93c6e6f9a0f728e021a91f821}{add}} (\mbox{\hyperlink{class_system}{System}} $\ast$system)
+\begin{DoxyCompactList}\small\item\em add a system to container \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_ab69613bde0ace81c92bbf519660ccb2c}{add}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$flow)
+\begin{DoxyCompactList}\small\item\em add a flow to container \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a4b232fcae2a24c08d156aacd39a34e15}{removal}} (\mbox{\hyperlink{class_system}{System}} $\ast$const sys)
+\begin{DoxyCompactList}\small\item\em remove a system from container \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_a89e0e87c3d7a5b9fde734686c3e5e752}{removal}} (\mbox{\hyperlink{class_flow}{Flow}} $\ast$const flow)
+\begin{DoxyCompactList}\small\item\em remove a flow from container \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{system\+Iterator}} \mbox{\hyperlink{class_model_ab49a403cd190b087cdb61822ef486a96}{system\+Begin}} (void)
+\begin{DoxyCompactList}\small\item\em begin Iterator for the systems container \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{system\+Iterator}} \mbox{\hyperlink{class_model_a4c84a2018bb68f1134f836de3a9af5f6}{system\+End}} (void)
+\begin{DoxyCompactList}\small\item\em end Iterator for the systems container \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{flow\+Iterator}} \mbox{\hyperlink{class_model_a4b411f0ae115b2e0c44249a55db47b88}{flow\+Begin}} (void)
+\begin{DoxyCompactList}\small\item\em begin Iterator for the flows container \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{flow\+Iterator}} \mbox{\hyperlink{class_model_a604b844d16298df2bddd6228e36f688e}{flow\+End}} (void)
+\begin{DoxyCompactList}\small\item\em end Iterator for the flows container \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_model_afa9818029d8db2e97227be3ceeb5160c}{execute}} (double time\+Initial, double time\+Final)
+\begin{DoxyCompactList}\small\item\em function to execute all flows equations \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{class_model}{Model}} representation class. 
+
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{class_model_ab49462747685b9625739b323fbdb373b}\label{class_model_ab49462747685b9625739b323fbdb373b}} 
+\index{Model@{Model}!flowIterator@{flowIterator}}
+\index{flowIterator@{flowIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowIterator}{flowIterator}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{class_flow}{Flow}}$\ast$$>$\+::iterator \mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{Model\+::flow\+Iterator}}}
+
+iterator for container used for Flows \mbox{\Hypertarget{class_model_a6ee7e31b02b03db955c631d88c21f1be}\label{class_model_a6ee7e31b02b03db955c631d88c21f1be}} 
+\index{Model@{Model}!systemIterator@{systemIterator}}
+\index{systemIterator@{systemIterator}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemIterator}{systemIterator}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{class_system}{System}}$\ast$$>$\+::iterator \mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{Model\+::system\+Iterator}}}
+
+iterator for container used for Systems 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_model_ae3b375de5f6df4faf74a95d64748e048}\label{class_model_ae3b375de5f6df4faf74a95d64748e048}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+empty constructor 
+
+\mbox{\Hypertarget{class_model_ae50c01e8143e723f8fffa3f90704180e}\label{class_model_ae50c01e8143e723f8fffa3f90704180e}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{const string}]{name,  }\item[{const double}]{time\+Initial,  }\item[{const double}]{time\+Final }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{class_model}{Model}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & \mbox{\hyperlink{class_model}{Model}} name \\
+\hline
+{\em time\+Initial} & \mbox{\hyperlink{class_model}{Model}} Initial Time \\
+\hline
+{\em time\+Final} & \mbox{\hyperlink{class_model}{Model}} Final Time \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_ad6ebd2062a0b823db841a0b88baac4c0}\label{class_model_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destroy the \mbox{\hyperlink{class_model}{Model}} object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_model_ab69613bde0ace81c92bbf519660ccb2c}\label{class_model_ab69613bde0ace81c92bbf519660ccb2c}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$}]{flow }\end{DoxyParamCaption})}
+
+
+
+add a flow to container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & flow to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a302d4ed93c6e6f9a0f728e021a91f821}\label{class_model_a302d4ed93c6e6f9a0f728e021a91f821}} 
+\index{Model@{Model}!add@{add}}
+\index{add@{add}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{system }\end{DoxyParamCaption})}
+
+
+
+add a system to container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em system} & system to be added \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_afa9818029d8db2e97227be3ceeb5160c}\label{class_model_afa9818029d8db2e97227be3ceeb5160c}} 
+\index{Model@{Model}!execute@{execute}}
+\index{execute@{execute}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Model\+::execute (\begin{DoxyParamCaption}\item[{double}]{time\+Initial,  }\item[{double}]{time\+Final }\end{DoxyParamCaption})}
+
+
+
+function to execute all flows equations 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Initial} & Initial time for simulation \\
+\hline
+{\em time\+Final} & Final time for simulation \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a4b411f0ae115b2e0c44249a55db47b88}\label{class_model_a4b411f0ae115b2e0c44249a55db47b88}} 
+\index{Model@{Model}!flowBegin@{flowBegin}}
+\index{flowBegin@{flowBegin}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowBegin()}{flowBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{Model\+::flow\+Iterator}} Model\+::flow\+Begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+begin Iterator for the flows container 
+
+\begin{DoxyReturn}{Returns}
+flow\+Iterator \+: iterator for container (begin) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a604b844d16298df2bddd6228e36f688e}\label{class_model_a604b844d16298df2bddd6228e36f688e}} 
+\index{Model@{Model}!flowEnd@{flowEnd}}
+\index{flowEnd@{flowEnd}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{flowEnd()}{flowEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_ab49462747685b9625739b323fbdb373b}{Model\+::flow\+Iterator}} Model\+::flow\+End (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+end Iterator for the flows container 
+
+\begin{DoxyReturn}{Returns}
+flow\+Iterator \+: iterator for container (end) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a65e1711255fbab5883708002ef89f773}\label{class_model_a65e1711255fbab5883708002ef89f773}} 
+\index{Model@{Model}!getName@{getName}}
+\index{getName@{getName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Model\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Name of a \mbox{\hyperlink{class_model}{Model}}. 
+
+\begin{DoxyReturn}{Returns}
+string \+: \mbox{\hyperlink{class_model}{Model}} name 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a3d20b079e3979d924453e44a459611af}\label{class_model_a3d20b079e3979d924453e44a459611af}} 
+\index{Model@{Model}!getTimeFinal@{getTimeFinal}}
+\index{getTimeFinal@{getTimeFinal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getTimeFinal()}{getTimeFinal()}}
+{\footnotesize\ttfamily double Model\+::get\+Time\+Final (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Time Final for a \mbox{\hyperlink{class_model}{Model}}. 
+
+\begin{DoxyReturn}{Returns}
+double \+: Final Time for \mbox{\hyperlink{class_model}{Model}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_aadad322b808f42f84a2d16f59abe475b}\label{class_model_aadad322b808f42f84a2d16f59abe475b}} 
+\index{Model@{Model}!getTimeInitial@{getTimeInitial}}
+\index{getTimeInitial@{getTimeInitial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getTimeInitial()}{getTimeInitial()}}
+{\footnotesize\ttfamily double Model\+::get\+Time\+Initial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the Time Initial for a \mbox{\hyperlink{class_model}{Model}}. 
+
+\begin{DoxyReturn}{Returns}
+double \+: Initial Time for \mbox{\hyperlink{class_model}{Model}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a89e0e87c3d7a5b9fde734686c3e5e752}\label{class_model_a89e0e87c3d7a5b9fde734686c3e5e752}} 
+\index{Model@{Model}!removal@{removal}}
+\index{removal@{removal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{removal()}{removal()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Model\+::removal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_flow}{Flow}} $\ast$const}]{flow }\end{DoxyParamCaption})}
+
+
+
+remove a flow from container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em flow} & flow to de removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a4b232fcae2a24c08d156aacd39a34e15}\label{class_model_a4b232fcae2a24c08d156aacd39a34e15}} 
+\index{Model@{Model}!removal@{removal}}
+\index{removal@{removal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{removal()}{removal()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Model\+::removal (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_system}{System}} $\ast$const}]{sys }\end{DoxyParamCaption})}
+
+
+
+remove a system from container 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sys} & system to be removed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}\label{class_model_a79ee6699ac4a15fb4dd9a9d5802249c5}} 
+\index{Model@{Model}!setName@{setName}}
+\index{setName@{setName}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Model\+::set\+Name (\begin{DoxyParamCaption}\item[{const string}]{name }\end{DoxyParamCaption})}
+
+
+
+Set the Name of a \mbox{\hyperlink{class_model}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name to be seted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_adf1500bee936dc8dee78c075f67f9637}\label{class_model_adf1500bee936dc8dee78c075f67f9637}} 
+\index{Model@{Model}!setTimeFinal@{setTimeFinal}}
+\index{setTimeFinal@{setTimeFinal}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setTimeFinal()}{setTimeFinal()}}
+{\footnotesize\ttfamily void Model\+::set\+Time\+Final (\begin{DoxyParamCaption}\item[{const double}]{time\+Final }\end{DoxyParamCaption})}
+
+
+
+Set the Time Final for a \mbox{\hyperlink{class_model}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Final} & time final to be seted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_a8b61e786c2da4f29fea5d2ca68b30966}\label{class_model_a8b61e786c2da4f29fea5d2ca68b30966}} 
+\index{Model@{Model}!setTimeInitial@{setTimeInitial}}
+\index{setTimeInitial@{setTimeInitial}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setTimeInitial()}{setTimeInitial()}}
+{\footnotesize\ttfamily void Model\+::set\+Time\+Initial (\begin{DoxyParamCaption}\item[{const double}]{time\+Initial }\end{DoxyParamCaption})}
+
+
+
+Set the Time Initial for a \mbox{\hyperlink{class_model}{Model}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em time\+Initial} & time initial to be seted \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_model_ab49a403cd190b087cdb61822ef486a96}\label{class_model_ab49a403cd190b087cdb61822ef486a96}} 
+\index{Model@{Model}!systemBegin@{systemBegin}}
+\index{systemBegin@{systemBegin}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemBegin()}{systemBegin()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{Model\+::system\+Iterator}} Model\+::system\+Begin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+begin Iterator for the systems container 
+
+\begin{DoxyReturn}{Returns}
+system\+Iterator\+: iterator for container (begin) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_model_a4c84a2018bb68f1134f836de3a9af5f6}\label{class_model_a4c84a2018bb68f1134f836de3a9af5f6}} 
+\index{Model@{Model}!systemEnd@{systemEnd}}
+\index{systemEnd@{systemEnd}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{systemEnd()}{systemEnd()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_model_a6ee7e31b02b03db955c631d88c21f1be}{Model\+::system\+Iterator}} Model\+::system\+End (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+end Iterator for the systems container 
+
+\begin{DoxyReturn}{Returns}
+system\+Iterator\+: iterator for container (end) 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{_model_8h}{Model.\+h}}\item 
+src/\mbox{\hyperlink{_model_8cpp}{Model.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,4 @@
+<map id="FlowImpl::getName" name="FlowImpl::getName">
+<area shape="rect" id="node1" title="Get the Name of Flow." alt="" coords="192,13,325,38"/>
+<area shape="rect" id="node2" href="$class_flow_handle_pointer.html#afcca789dce198c360cce1d93273afba9" title="Get the Name of a Flow object." alt="" coords="5,5,144,45"/>
+</map>

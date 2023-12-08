@@ -1,0 +1,10 @@
+digraph "Flow"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [shape=record,label="{Flow\n|# name\l# tax\l|+ Flow()\l+ Flow()\l+ ~Flow()\l+ getName()\l+ setName()\l+ getSystemInput()\l+ setSystemInput()\l+ getSystemOutput()\l+ setSystemOutput()\l+ getTax()\l+ setTax()\l+ execute()\l# Flow()\l# operator=()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Flows abstract class."];
+  Node2 -> Node1 [color="grey25",style="solid",label=" #systemInput\n#systemOutput" ,arrowhead="odiamond"];
+  Node2 [shape=record,label="{System\n||+ System()\l+ System()\l+ ~System()\l+ getName()\l+ setName()\l+ getValue()\l+ setValue()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_system.html",tooltip="System class implementation."];
+}

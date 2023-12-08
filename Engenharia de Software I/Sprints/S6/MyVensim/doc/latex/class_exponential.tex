@@ -1,0 +1,101 @@
+\hypertarget{class_exponential}{}\doxysection{Exponential Class Reference}
+\label{class_exponential}\index{Exponential@{Exponential}}
+
+
+{\ttfamily \#include $<$flows.\+h$>$}
+
+
+
+Inheritance diagram for Exponential\+:
+% FIG 0
+
+
+Collaboration diagram for Exponential\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_exponential_a03a6f5cb9706e8641c24f047d6d5ace2}{Exponential}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\char`\"{}teste\char`\"{}, \mbox{\hyperlink{class_system}{System}} $\ast$input=NULL, \mbox{\hyperlink{class_system}{System}} $\ast$output=NULL)
+\item 
+virtual double \mbox{\hyperlink{class_exponential_ab32cd52ed47f5e3f16cdfe0aa05c94a6}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Abstract function to execute a \mbox{\hyperlink{class_flow}{Flow}} equation. Need override. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_ac9975e144e606242748197798e87dd32}{Flow}} ()
+\begin{DoxyCompactList}\small\item\em empty contructor \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow_a146649c596ae7638d5a8b1cdc44685fa}{Flow}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{system\+Input}}, \mbox{\hyperlink{class_system}{System}} $\ast$\mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{system\+Output}}, double \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}})
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} object with parameters. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_flow_a5991efa6e8cf88c4ef2125cc727db333}{$\sim$\+Flow}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{class_flow}{Flow}} object. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_flow_a62bbc54ff95eeb0795511519edf32077}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Get the Name of \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_a8a6ee4d4d488e08e8d6fbe1bdb5c14ef}{set\+Name}} (const string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}})
+\begin{DoxyCompactList}\small\item\em Set the Name of \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a127ecf51b93c6dbd01fa241449bef7f1}{get\+System\+Input}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_system}{System}} Input of a \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_aa91c8b153b66cb3e6cfe792c1371e4fe}{set\+System\+Input}} (\mbox{\hyperlink{class_system}{System}} $\ast$const \mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{system\+Input}})
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_system}{System}} Input of a \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a1effc232bc58cd298220c153a10e2bbc}{get\+System\+Output}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{class_system}{System}} Output for a \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_aa2b4be7c4e648c2a2f2bb06f54ec8be7}{set\+System\+Output}} (\mbox{\hyperlink{class_system}{System}} $\ast$const \mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{system\+Output}})
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{class_system}{System}} Output for a \mbox{\hyperlink{class_flow}{Flow}}. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_flow_ac3427b4d1f625d563e7662025d898ef5}{get\+Tax}} () const
+\begin{DoxyCompactList}\small\item\em Get the Tax. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_flow_a7bbca84e9c9fa86ab89c4dc7a5f5d421}{set\+Tax}} (const double \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}})
+\begin{DoxyCompactList}\small\item\em Set the Tax. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Abstract function to execute a \mbox{\hyperlink{class_flow}{Flow}} equation. Need override. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_flow_a3e89ebd9632dac8f2e05b9050afd277b}{Flow}} (const \mbox{\hyperlink{class_flow}{Flow}} \&copy)
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{class_flow}{Flow}} object by copy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_flow}{Flow}} \& \mbox{\hyperlink{class_flow_ac5fae2ad1c3bf3c518240fe85bc2d4b2}{operator=}} (const \mbox{\hyperlink{class_flow}{Flow}} \&f)
+\begin{DoxyCompactList}\small\item\em overloaded = operator \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_flow}{Flow}}}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{system\+Input}}
+\item 
+\mbox{\hyperlink{class_system}{System}} $\ast$ \mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{system\+Output}}
+\item 
+double \mbox{\hyperlink{class_flow_ad89bbe1d71a0ced42d11b65fee9b4107}{tax}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_exponential_a03a6f5cb9706e8641c24f047d6d5ace2}\label{class_exponential_a03a6f5cb9706e8641c24f047d6d5ace2}} 
+\index{Exponential@{Exponential}!Exponential@{Exponential}}
+\index{Exponential@{Exponential}!Exponential@{Exponential}}
+\doxysubsubsection{\texorpdfstring{Exponential()}{Exponential()}}
+{\footnotesize\ttfamily Exponential\+::\+Exponential (\begin{DoxyParamCaption}\item[{const string}]{name = {\ttfamily \char`\"{}teste\char`\"{}},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{input = {\ttfamily NULL},  }\item[{\mbox{\hyperlink{class_system}{System}} $\ast$}]{output = {\ttfamily NULL} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_exponential_ab32cd52ed47f5e3f16cdfe0aa05c94a6}\label{class_exponential_ab32cd52ed47f5e3f16cdfe0aa05c94a6}} 
+\index{Exponential@{Exponential}!execute@{execute}}
+\index{execute@{execute}!Exponential@{Exponential}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual double Exponential\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Abstract function to execute a \mbox{\hyperlink{class_flow}{Flow}} equation. Need override. 
+
+\begin{DoxyReturn}{Returns}
+double \+: value after execution 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_flow_a619be0b590c78202127bc6ac7fb04029}{Flow}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+test/funcional/\mbox{\hyperlink{flows_8h}{flows.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="FlowImpl::getSystemOutput" name="FlowImpl::getSystemOutput">
+<area shape="rect" id="node1" title="Get the System Output for a Flow." alt="" coords="361,55,544,80"/>
+<area shape="rect" id="node2" href="$class_flow_log.html#abc6c88d3d231856582afbb2c97962dee" title="function to calculate the tax of a flow (value after execution)" alt="" coords="182,5,306,31"/>
+<area shape="rect" id="node3" href="$class_flow_exp.html#a377eaf1d653770557b57715529f77d93" title="function to calculate the tax of a flow (value after execution)" alt="" coords="181,55,307,80"/>
+<area shape="rect" id="node4" href="$class_flow_handle_pointer.html#a088e57d8a634c8c1a082b3c27af4fca1" title="get destination or output system" alt="" coords="175,105,313,145"/>
+<area shape="rect" id="node5" href="$class_logistic.html#a2e7a34730c59a60b3d9cc65b0b1c0639" title="extended execute function" alt="" coords="5,112,127,137"/>
+</map>

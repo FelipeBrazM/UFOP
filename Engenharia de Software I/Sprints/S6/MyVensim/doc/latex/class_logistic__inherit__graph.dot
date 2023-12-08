@@ -1,0 +1,10 @@
+digraph "Logistic"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  Node1 [shape=record,label="{Logistic\n||+ Logistic()\l+ execute()\l}",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="steelblue1",style="solid",arrowtail="onormal"];
+  Node2 [shape=record,label="{Flow\n|# name\l# systemInput\l# systemOutput\l# tax\l|+ Flow()\l+ Flow()\l+ ~Flow()\l+ getName()\l+ setName()\l+ getSystemInput()\l+ setSystemInput()\l+ getSystemOutput()\l+ setSystemOutput()\l+ getTax()\l+ setTax()\l+ execute()\l# Flow()\l# operator=()\l}",height=0.2,width=0.4,color="gray40", fillcolor="white", style="filled",URL="$class_flow.html",tooltip="Flows abstract class."];
+}

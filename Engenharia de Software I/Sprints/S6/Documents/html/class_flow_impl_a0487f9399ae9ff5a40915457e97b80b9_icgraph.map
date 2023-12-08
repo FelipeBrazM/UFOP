@@ -1,0 +1,5 @@
+<map id="FlowImpl::setName" name="FlowImpl::setName">
+<area shape="rect" id="node1" title="Set the Name of Flow." alt="" coords="192,45,325,70"/>
+<area shape="rect" id="node2" href="$class_flow_handle_pointer.html#aa658051393410b492be8476ac541d848" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node3" href="$class_flow_handle_pointer.html#af26b365e7b1217e88702ca16c133e67f" title="Set the Name of a Flow object." alt="" coords="5,69,144,109"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="unit_Model_getTimeFinal" name="unit_Model_getTimeFinal">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,172,56"/>
+<area shape="rect" id="node2" href="$class_model.html#a12247b490ffc434694463297cf333a1c" title="Create a Model object by fabric." alt="" coords="221,5,357,31"/>
+<area shape="rect" id="node4" href="$class_model.html#afe5634044e8f4d3a2537d879fac7bce1" title="Get the Time Final for a Model." alt="" coords="220,55,359,80"/>
+<area shape="rect" id="node3" href="$class_model_impl.html#a0f66099887e66d1ff135f0934c487c32" title="Create a Model object by fabric." alt="" coords="407,5,567,31"/>
+</map>

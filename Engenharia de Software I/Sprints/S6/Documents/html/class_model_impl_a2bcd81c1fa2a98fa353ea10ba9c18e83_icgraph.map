@@ -1,0 +1,9 @@
+<map id="ModelImpl::removal" name="ModelImpl::removal">
+<area shape="rect" id="node1" title="remove a system from container" alt="" coords="409,98,543,123"/>
+<area shape="rect" id="node2" href="$class_model_impl.html#af51c7b300b406c20231d29769673300f" title=" " alt="" coords="201,17,352,42"/>
+<area shape="rect" id="node4" href="$class_model_impl.html#a1119617f4c2d551e7841c9460ac1c28a" title=" " alt="" coords="192,73,361,98"/>
+<area shape="rect" id="node6" href="$class_model.html#ab6536de767d6f4aefa28d4ec3dcf34ec" title="remove a Model from container" alt="" coords="222,122,331,147"/>
+<area shape="rect" id="node7" href="$class_model_handle_pointer.html#a49ab0889b2fae01fd85a827254c0b36f" title="remove a system from container" alt="" coords="207,172,346,212"/>
+<area shape="rect" id="node3" href="$class_model_handle_pointer.html#a80abec6010849d8d7286be7d782b20bc" title="delete flows created by fabric" alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node5" href="$class_model_handle_pointer.html#aee9eb1f0957ce782fb0c83e41603944e" title="delete systems created by fabric" alt="" coords="5,69,144,109"/>
+</map>

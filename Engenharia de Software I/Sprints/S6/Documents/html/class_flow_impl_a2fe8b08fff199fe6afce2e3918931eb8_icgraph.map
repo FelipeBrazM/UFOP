@@ -1,0 +1,5 @@
+<map id="FlowImpl::setTax" name="FlowImpl::setTax">
+<area shape="rect" id="node1" title="Set the Tax." alt="" coords="192,45,312,70"/>
+<area shape="rect" id="node2" href="$class_flow_handle_pointer.html#aa658051393410b492be8476ac541d848" title=" " alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node3" href="$class_flow_handle_pointer.html#ac095fddfd86d5689626d5cd1bab0212b" title="Set manually the tax of a flow (value after execution)" alt="" coords="5,69,144,109"/>
+</map>

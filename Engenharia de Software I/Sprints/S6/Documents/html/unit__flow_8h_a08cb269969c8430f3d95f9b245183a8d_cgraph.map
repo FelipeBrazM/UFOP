@@ -1,0 +1,5 @@
+<map id="unit_Flow_setTax" name="unit_Flow_setTax">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,128,56"/>
+<area shape="rect" id="node2" href="$class_flow.html#a44b7bfae86125b854612f08f7b129ce1" title="Get the tax of a flow (value after execution)" alt="" coords="176,5,272,31"/>
+<area shape="rect" id="node3" href="$class_flow.html#a6aa1632fb2b9dcfa09720e100dd9af8d" title="Set manually the tax of a flow (value after execution)" alt="" coords="176,55,272,80"/>
+</map>

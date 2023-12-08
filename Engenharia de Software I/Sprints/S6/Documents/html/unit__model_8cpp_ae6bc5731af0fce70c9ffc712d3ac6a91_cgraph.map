@@ -1,0 +1,7 @@
+<map id="unit_Model_setTime" name="unit_Model_setTime">
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,144,80"/>
+<area shape="rect" id="node2" href="$class_model.html#a12247b490ffc434694463297cf333a1c" title="Create a Model object by fabric." alt="" coords="192,5,328,31"/>
+<area shape="rect" id="node4" href="$class_model.html#a41569269c162962571a791c0fe737bca" title="Get the current time for a Model." alt="" coords="205,55,315,80"/>
+<area shape="rect" id="node5" href="$class_model.html#a6e775f65cfa1a0928b72db5e6427b512" title="Set the current time for a Model." alt="" coords="205,104,315,129"/>
+<area shape="rect" id="node3" href="$class_model_impl.html#a0f66099887e66d1ff135f0934c487c32" title="Create a Model object by fabric." alt="" coords="376,5,536,31"/>
+</map>

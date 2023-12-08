@@ -1,0 +1,4 @@
+<map id="FlowHandlePointer::getTax" name="FlowHandlePointer::getTax">
+<area shape="rect" id="node1" title="Get the tax of a flow (value after execution)" alt="" coords="5,5,144,45"/>
+<area shape="rect" id="node2" href="$class_flow_impl.html#a0b2c6a67e00dcc65e974030ee4cb1ff7" title="Get the Tax." alt="" coords="192,13,312,38"/>
+</map>

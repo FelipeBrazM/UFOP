@@ -1,0 +1,40 @@
+\hypertarget{flows_8h_source}{}\doxysection{flows.\+h}
+\label{flows_8h_source}\index{test/funcional/flows.h@{test/funcional/flows.h}}
+\mbox{\hyperlink{flows_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}../../src/Flow.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}../../src/System.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ "{}../../src/Model.h"{}}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <cmath>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <cassert>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_exponential}{Exponential}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_flow}{Flow}}\{}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{class_exponential_a03a6f5cb9706e8641c24f047d6d5ace2}{Exponential}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\textcolor{stringliteral}{"{}teste"{}},\ \mbox{\hyperlink{class_system}{System}}*\ input\ =\ NULL,\ \mbox{\hyperlink{class_system}{System}}*\ output\ =\ NULL)\ :\ \mbox{\hyperlink{class_flow}{Flow}}(\mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ input,\ output,\ 0.0)\ \{\}}
+\DoxyCodeLine{00015\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_exponential_ab32cd52ed47f5e3f16cdfe0aa05c94a6}{execute}}()\{}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{systemInput}}-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{00017\ \ \ \ \ \}}
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_logistic}{Logistic}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_flow}{Flow}}\{}
+\DoxyCodeLine{00021\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{class_logistic_a1f6643a6db190356083a8066e28b3b03}{Logistic}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\textcolor{stringliteral}{"{}teste"{}},\ \mbox{\hyperlink{class_system}{System}}*\ input\ =\ NULL,\ \mbox{\hyperlink{class_system}{System}}*\ output\ =\ NULL)\ :\ \mbox{\hyperlink{class_flow}{Flow}}(\mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ input,\ output,0.0)\ \{\}}
+\DoxyCodeLine{00023\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_logistic_a2e7a34730c59a60b3d9cc65b0b1c0639}{execute}}()\{}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{systemOutput}}-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()\ *\ (1-\/(\mbox{\hyperlink{class_flow_a2c5d9107a41a7d3c5628de784e9d50c0}{systemOutput}}-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}()/70));}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_complex_flow}{ComplexFlow}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_flow}{Flow}}\{}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \mbox{\hyperlink{class_complex_flow_a040498325bb21e35f4aac5ae8d173b38}{ComplexFlow}}(\textcolor{keyword}{const}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}}=\textcolor{stringliteral}{"{}teste"{}},\ \mbox{\hyperlink{class_system}{System}}*\ input\ =\ NULL,\ \mbox{\hyperlink{class_system}{System}}*\ output\ =\ NULL)\ :\ \mbox{\hyperlink{class_flow}{Flow}}(\mbox{\hyperlink{class_flow_a8801d2ed91a9d96003d4bc8024451551}{name}},\ input,\ output,0.0)\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ \textcolor{keyword}{virtual}\ \textcolor{keywordtype}{double}\ \mbox{\hyperlink{class_complex_flow_ab29a8e6920c79deaa8b2d6e04628f25d}{execute}}()\{}
+\DoxyCodeLine{00032\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ 0.01\ *\ \mbox{\hyperlink{class_flow_acc6a8c6dfe679072dbfd8e24e55558ec}{systemInput}}-\/>\mbox{\hyperlink{class_system_aa7d17369d1034e7d8643a63f69d1901d}{getValue}}();}
+\DoxyCodeLine{00033\ \ \ \ \ \}}
+\DoxyCodeLine{00034\ \};}
+
+\end{DoxyCode}
