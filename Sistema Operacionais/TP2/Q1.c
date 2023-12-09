@@ -85,7 +85,7 @@ int main(){
                 printf("\x1b[33m""Soma em PID: %d\n""\x1b[0m", getpid());
                 printf("\x1b[36m""-----------------------------\n""\x1b[0m");
                 read(saldo[READ], &x, sizeof(int));
-                x += 1000;
+                x += 500;
                 write(saldo[WRITE], &x, sizeof(int));  
             }
             else{
@@ -117,8 +117,8 @@ int main(){
 }
 
 void menu(){
-    printf("\x1b[32m""\nPara somar 1000 UD aperte [+]\n");
-    printf("Para subitrair 1000 UD aperte [-]\n");
+    printf("\x1b[32m""\nPara somar 500 UD aperte [+]\n");
+    printf("Para subitrair 500 UD aperte [-]\n");
     printf("Para imprimir o saldo aperte [s]\n");
     printf("Para encerrar o programa aperte [k]\n");
     printf("Para confirmar a sua escolha aperte [ENTER]\n\n");

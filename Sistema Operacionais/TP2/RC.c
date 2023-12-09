@@ -8,6 +8,8 @@
 
 #define NUMTHREADS 3
 
+// Removendo pthread_join acaba com a espera para fechar a threads, fazendo com que a Race Condition apareça
+
 pthread_t threads[NUMTHREADS];
 int saldo = 0;
 int flag = 0;
@@ -27,19 +29,14 @@ int main(int argc, char **argv) {
         opcao = (int)getchar();
 
         if (opcao == 46){ // imprime
-            pthread_join(threads[0], NULL);
-            pthread_join(threads[1], NULL);
-            pthread_join(threads[2], NULL);
             pthread_create(&(threads[0]), NULL, thread_func_1, NULL);
             //Cria thread passando a função de impressao e realiza solicitação do usuario
         }
         else if (opcao == 43){ // soma
-            pthread_join(threads[1], NULL); //espera acabar
             pthread_create(&(threads[1]), NULL, thread_func_2, NULL);
             //pra criar uma nova thread com solicitação do usuario
         }
         else if (opcao == 45){ // subtrai
-            pthread_join(threads[2], NULL);
             pthread_create(&(threads[2]), NULL, thread_func_3, NULL);
         }
         else if (opcao == 83 || opcao == 115){
