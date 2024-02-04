@@ -45,7 +45,7 @@ void Buffer::up() {
 // Métodos para controle do semáforo do produtor
 void Buffer::downProdutor() {
     while (bufferLen() == cheio) {
-        cout << "\nProdutor Parado" << endl;
+        cout << "\x1b[31m""\nProdutor Parado""\x1b[0m" << endl;
         pthread_cond_wait(&condicaoProdutor, &mutex);
     }
 }
@@ -57,7 +57,7 @@ void Buffer::upProdutor() {
 // Métodos para controle do semáforo do consumidor
 void Buffer::downConsumidor() {
     while (bufferLen() == 0) {
-        cout << "\nConsumidor Parado" << endl;
+        cout << "\x1b[31m""\nConsumidor Parado""\x1b[0m" << endl;
         pthread_cond_wait(&condicaoConsumidor, &mutex);
     }
 }
@@ -103,11 +103,11 @@ Consumidor::Consumidor(Buffer *buffer, int qtdItensConsumir, int consumoPorSegun
 void Consumidor::run() {
     int item;
     int sleepTempo = 1000 / consumoPorSegundo;
-    std::cout << "Consumidor em modo Sleep: " << sleepTempo << std::endl;
+    std::cout << "\x1b[34m""Consumidor em modo Sleep: ""\x1b[0m" << sleepTempo << std::endl;
 
     for (int i = 0; i < qtdItensConsumir; i++) {
         buffer->consumir(item);
-        std::cout << i + 1 << " - Item removido: " << item << std::endl;
+        std::cout << i + 1 << "\x1b[31m"" - Item removido: ""\x1b[0m" << item << std::endl;
         std::this_thread::sleep_for(std::chrono::milliseconds(sleepTempo));
     }
 }
@@ -124,12 +124,12 @@ void Produtor::run() {
     int item;
 
     int sleepTempo = 1000 / itensPorSegundo;
-    cout << "Produto em modo sleep: " << sleepTempo << endl;
+    cout << "\x1b[34m""Produto em modo sleep: ""\x1b[0m" << sleepTempo << endl;
 
     for (int i = 0; i < qtdItensProduzir; i++) {
         item = rand();           // Gera um novo item
         buffer->produzir(item);  // Adiciona no buffer
-        cout << i + 1 << " - Produzido: " << item << endl;
+        cout << i + 1 << "\x1b[32m"" - Produzido: ""\x1b[0m" << item << endl;
         this_thread::sleep_for(chrono::milliseconds(sleepTempo));
     }
 }

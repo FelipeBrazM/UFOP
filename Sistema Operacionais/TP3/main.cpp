@@ -3,39 +3,39 @@
 
 #define NUM_THREADS 2
 
-void *execConsumidor(void *consumidor) {
+void *runConsumidor(void *consumidor) {
     Consumidor *myConsumidor = static_cast<Consumidor*>(consumidor);
     myConsumidor->run();
     pthread_exit(NULL);
 }
 
-void *execProdutor(void *produtor) {
+void *runProdutor(void *produtor) {
     Produtor *myProdutor = static_cast<Produtor*>(produtor);
     myProdutor->run();
     pthread_exit(NULL);
 }
 
-int leitura(string texto){
-    cout << texto;
-    int resposta;
-    cin >> resposta;
-    return resposta;
+int read(string text){
+    cout << text;
+    int retorno;
+    cin >> retorno;
+    return retorno;
 }
 
-void linhaSeparacao(){
-    cout << "===============================================================================\n";
+void QuebraLinha(){
+    cout << "\x1b[36m""-------------------------------------------------------------------------------\n""\x1b[0m";
 }
 
 int main() {
     
-    int tamanhoBuffer = leitura("Digite o tamanho do buffer: ");
-    linhaSeparacao();
-    int qtdItensProduzir = leitura("Digite quantos itens serão produzidos: ");
-    int producaoPorSegundo = leitura("Digite quantos itens serão produzidos por segundo: ");
-    linhaSeparacao();
+    int tamanhoBuffer = read("\x1b[33m""Entre com o tamanho do Buffer: ""\x1b[0m");
+    QuebraLinha();
+    int qtdItensProduzir = read("\x1b[33m""Quantos itens serão produzidos? ""\x1b[0m");
+    int producaoPorSegundo = read("\x1b[33m""Por segundo serão produzidos quantos itens? ""\x1b[0m");
+    QuebraLinha();
     int qtdItensConsumir = qtdItensProduzir;
-    int consumoPorSegundo = leitura("Digite quantos itens serão consumidos por segundo: ");
-    linhaSeparacao();
+    int consumoPorSegundo = read("\x1b[33m""Por segundo serão consumidos quantos itens? ""\x1b[0m");
+    QuebraLinha();
 
     Buffer buffer(tamanhoBuffer);
     Consumidor consumidor(&buffer, qtdItensConsumir, consumoPorSegundo);
@@ -43,14 +43,14 @@ int main() {
 
     pthread_t threads[NUM_THREADS];
 
-    pthread_create(&threads[1], NULL, execProdutor, static_cast<void*>(&produtor));
-    pthread_create(&threads[0], NULL, execConsumidor, static_cast<void*>(&consumidor));
+    pthread_create(&threads[1], NULL, runProdutor, static_cast<void*>(&produtor));
+    pthread_create(&threads[0], NULL, runConsumidor, static_cast<void*>(&consumidor));
 
     for(int i = 0; i < NUM_THREADS; i++) pthread_join(threads[i], NULL);
     
-    linhaSeparacao();
-    cout << "Quantidade de itens produzidos: " << buffer.getItensProduzidos() << endl;
-    cout << "Quantidade de itens consumidos: " << buffer.getItensConsumidos() << endl;
+    QuebraLinha();
+    cout << "\x1b[33m""Total de itens produzidos: ""\x1b[0m" << buffer.getItensProduzidos() << endl;
+    cout << "\x1b[33m""Total de itens consumidos: ""\x1b[0m" << buffer.getItensConsumidos() << endl;
 
 
 
