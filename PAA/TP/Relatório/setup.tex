@@ -1,0 +1,167 @@
+% \usepackage[english]{babel}
+\usepackage[brazilian]{babel}
+\usepackage[letterpaper,top=2cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+% \usepackage[colorlinks=true,linkcolor=blue]{hyperref}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage[figure,table,lstlisting]{totalcount}
+\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{float} 
+\usepackage[numbers]{natbib}
+
+
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Trabalho pratico de projeto e analise de algoritmos},
+    pdfpagemode=FullScreen,
+    }
+
+\definecolor{verde}{rgb}{0.25,0.5,0.35}
+\definecolor{jpurple}{rgb}{0.5,0,0.35}
+
+\lstset{
+  language=C++,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{jpurple}\bfseries,
+  stringstyle=\color{red},
+  commentstyle=\color{verde},
+  morecomment=[s][\color{blue}]{/**}{*/},
+  extendedchars=true,
+  showspaces=false,
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny,
+  breaklines=true,
+  backgroundcolor=\color{cyan!10},
+  breakautoindent=true,
+  captionpos=b,
+  xleftmargin=0pt,
+  tabsize=4
+}
+
+\renewcommand{\lstlistingname}{Código}
+\renewcommand{\lstlistlistingname}{Lista de Códigos Fonte}
+
+\newcommand\conditionalLoF{%
+    \iftotalfigures
+        \listoffigures
+    \fi}
+\newcommand\conditionalLoT{%
+    \iftotaltables
+        \listoftables
+    \fi}
+\newcommand\conditionalLoL{%
+    \iftotallstlistings
+        \lstlistoflistings
+    \fi}
+
+\newcommand{\DESCRICAO}[1]{
+    % set flexible interword space
+    \setlength{\spaceskip}{0.5em plus 1em minus 0.1em}%
+    % add some space with not as much flexibility, but only
+    % if some space precedes
+    \ifdim\lastskip>0pt \hspace{0.5em plus 0.5em minus 0.1em}\fi
+    \texttt{\textbf{\color{red}#1}}
+}
+
+\newcommand{\CAPA}[4]{
+    % 1) Título
+    % 2)
+    % 3)
+    % 4)
+    \begin{titlepage}
+    	
+    	  \vfill
+    	
+    	  \begin{center}
+    	    \begin{large}
+    	      Universidade Federal de Ouro Preto - UFOP
+    	    \end{large}
+    	  \end{center}
+    	
+    	  \begin{center}
+    	    \begin{large}
+    	      Instituto de Ciências Exatas e Biológicas - ICEB
+    	    \end{large}
+    	  \end{center}
+    	
+    	  \begin{center}
+    	    \begin{large}
+    	      Departamento de Computação - DECOM
+    	    \end{large}
+    	  \end{center}
+          
+          \begin{center}
+    	    \begin{large}
+              Ciência da Computação
+    	    \end{large}
+    	  \end{center}
+    	  
+    	  \vfill
+          \vfill
+    	
+    	  \begin{center}
+    	    \begin{Huge}
+    	      #1\\
+    	    \end{Huge}
+    	    \begin{Large}
+              #2\\
+    	    \end{Large}
+    	  \end{center}
+    	  
+    	  \vfill
+    	  
+    	  \begin{center}
+    	    \begin{large}
+              #3
+    	    \end{large}
+    	  \end{center}
+    	
+    	  \begin{center}
+    	    \begin{large}
+    	      Professor: #4
+    	    \end{large}
+    	  \end{center}
+    	
+    	  \vfill
+          \vfill
+    	
+    	  \begin{center}
+    	    \begin{large}
+    	      Ouro Preto \\
+    	      \today \\
+    	    \end{large}
+    	  \end{center}    
+    
+    
+    \clearpage
+    \newpage
+
+    \tableofcontents
+    \conditionalLoF
+    \conditionalLoT
+    \conditionalLoL
+	
+    % \thispagestyle{empty}
+    % \tableofcontents
+    % \newpage
+    % \thispagestyle{empty}
+    
+    % \listoffigures
+    
+    % \lstlistoflistings
+    % \newpage
+    % \thispagestyle{empty}
+    \end{titlepage}
+}

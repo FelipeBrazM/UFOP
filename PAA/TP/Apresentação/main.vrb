@@ -1,0 +1,18 @@
+\frametitle{Cláusula computável}
+\begin{itemize}
+            \item A cláusula a seguir não poderá ser computável.
+            \item Estamos analisando o valor do True e a cláusula ficará falsa.
+            \item Não sabemos se ela será verdadeira ou falsa no fim do processamento.
+        \end{itemize}
+        \begin{tcolorbox}[width=\linewidth, fontupper=\ttfamily,  halign=flush left]
+            Cláusula: 1 -1 0 0 1 \newline
+            Solução: [False, False, True, \_, \_] \newline
+            i = 3
+        \end{tcolorbox}
+        \begin{lstlisting}
+def clausula_computavel(i, clausula, qtd_variaveis):
+    for j in range(i, qtd_variaveis):
+        if clausula[j-1] == -1:
+            return False
+    return True
+        \end{lstlisting}

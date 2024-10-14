@@ -1,0 +1,5 @@
+\babel@toc {portuguese}{}\relax 
+\babel@toc {brazil}{}\relax 
+\beamer@sectionintoc {1}{Clique}{3}{0}{1}
+\beamer@sectionintoc {2}{Conjunto Independente}{13}{0}{2}
+\beamer@sectionintoc {3}{SAT}{20}{0}{3}

@@ -1,0 +1,59 @@
+Caso 1: (Não satisfazi∨el)
+(A ∨ B ∨ C) ∧ (A ∨ ~B) ∧ (B ∨ ~C) ∧ (~A ∨ C) ∧ (~A ∨ ~B ∨ ~C)
+
+Caso 2:
+Variáveis: 20 \\
+Cláusulas: 150
+
+Caso 3:
+Variáveis: 7 \\
+Cláusulas: 80
+
+Caso 4: (Não satisfazi∨el)
+Variáveis: 10 \\
+Cláusulas: 100
+
+Caso 5:
+Variáveis: 11 \\
+Cláusulas: 30
+
+Caso 6:
+Variáveis: 18 \\
+Cláusulas: 34
+
+Caso 7:
+Variáveis: 17 \\
+Cláusulas: 50
+
+Caso 8:
+Variáveis: 12 \\
+Cláusulas: 47
+
+Caso 9: não satisfazi∨el
+Variáveis: 8 \\
+Cláusulas: 100
+
+Caso 10: Satisfazivel
+Variáveis: 25 \\
+Cláusulas: 150
+
+Caso 11:
+Variáveis: 12 \\
+Cláusulas: 100
+
+Caso 12:
+Variáveis: 10 \\
+Cláusulas: 15
+
+Caso 13:
+Variáveis: 100 \\
+Cláusulas: 9
+
+Caso 14:
+Variáveis: 18 \\
+Cláusulas: 4096
+
+Caso 15:
+Variáveis: 10
+Cláusulas: 59049
+

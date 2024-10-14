@@ -1,0 +1,386 @@
+% \usepackage[english]{babel}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\usepackage{comment}
+\usepackage{csquotes}
+\usepackage{kpfonts}
+\usepackage{amsmath}
+\usepackage{tcolorbox}
+
+
+\usepackage{listings}
+\lstset{
+  language=Python,
+  frame=single,  % Adds a frame around the code
+  basicstyle=\ttfamily,  % Use typewriter font for code
+  keywordstyle=\color{blue},  % Keywords in blue
+  commentstyle=\color{gray},  % Comments in gray
+  stringstyle=\color{red},  % Strings in red
+  breaklines=true  % Automatically break long lines
+}
+
+
+%imprimir 4 por página
+
+\usepackage{pgfpages}
+\selectlanguage{portuguese}
+%\pgfpagesuselayout{4 on 1}[a4paper,border shrink=5mm,landscape]
+% 4 quadros
+
+%\addbibresource{bibliografia.bib}
+
+% 1x1 === Para os alunos === Sem pausas  % http://tex.stackexchange.com/questions/1423/is-there-a-nice-way-to-compile-a-beamer-presentation-without-the-pauses
+%  \documentclass[handout]{beamer}
+
+% 3x1 === Para os alunos === Com anotações
+%  \documentclass[handout]{beamer}
+%  \usepackage{handoutWithNotes}
+%  \pgfpagesuselayout{3 on 1 with notes}[a4paper,border shrink=5mm]
+
+% 8x1
+%  \documentclass[handout]{beamer}
+%  \usepackage{pgfpages}
+%  \mode<handout>{\pgfpagesuselayout{8 on 1}[a4paper,border shrink=5mm]}%,landscape]}
+
+% Widescreen
+%  \documentclass[aspectratio = 169]{beamer}
+
+
+%\usepackage{beamerthemeAmsterdam}
+
+% Setup appearance:
+\usetheme{Dresden}
+\usepackage[onelanguage,ruled,lined,linesnumbered]{algorithm2e}
+\SetAlFnt{\small}
+\SetNoFillComment
+\newcommand\mycommfont[1]{\textit{\footnotesize\ttfamily\textcolor{gray}{#1}}}
+\SetCommentSty{mycommfont}
+\usepackage{algorithmic}
+\algsetup{linenosize=\tiny}
+\SetKw{KwBy}{by}
+\SetKwRepeat{Do}{do}{while}%
+
+%portuguese
+
+%\defbeamertemplate*{headline}{nosections}{\vskip\headheight}
+\usefonttheme[onlylarge]{structurebold}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+\usecolortheme{dolphin}
+\setbeamercovered{transparent} %pode ser: invisible
+%\setbeamertemplate{mini frames}[tick]
+
+%\setbeamertemplate{mini frames}[tick]
+
+\usepackage[framemethod=tikz]{mdframed}
+
+\definecolor{mycolor}{rgb}{0.122, 0.435, 0.698}
+
+\newmdenv[innerlinewidth=0.5pt, roundcorner=4pt,linecolor=mycolor,innerleftmargin=6pt,
+innerrightmargin=6pt,innertopmargin=6pt,innerbottommargin=6pt]{mybox}
+
+%Para inserir rodapé
+\setbeamertemplate{footline}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.3\paperwidth,ht=2.25ex,dp=1ex,center]{subsection in head/foot}%
+    \usebeamerfont{author in head/foot}\inserttitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.63\paperwidth,ht=2.25ex,dp=1ex,left,leftskip=0.5em]{title in head/foot}%
+    \usebeamerfont{title in head/foot}\insertsubtitle
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.07\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+    \usebeamerfont{title in head/foot} \insertframenumber{}/ \inserttotalframenumber
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+% Standard packages
+% \usepackage[english]{babel}
+% \usepackage[latin1]{inputenc}
+\usepackage{times}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\usepackage{listings}
+% \usepackage{listingsutf8}
+\usepackage{graphicx}
+\usepackage{fancybox}
+\usepackage{multirow}
+\usepackage{adjustbox}
+%\usepackage{xcolor,colortbl} % colorir celulas de tabelas: http://tex.stackexchange.com/questions/94799/how-do-i-color-table-columns-and-rows
+%\usepackage{animate} % PNG Animado: http://www.ipgp.fr/~lucas/Contrib/animbeamer.html  /  convert Bubble_sort_animation.gif -scene 1 +adjoin Bubble_sort_animation_%0d.png
+
+% Setup TikZ
+\usepackage{lmodern}
+\usepackage{xparse}
+\usepackage{tikz}
+\usetikzlibrary{arrows}
+\tikzstyle{block}=[draw opacity=0.7,line width=1.4cm]
+\usetikzlibrary{shapes.callouts} % referencias: http://tex.stackexchange.com/questions/5423/how-to-open-a-temporary-comics-like-balloon-in-a-beamer-slide
+                                 %              http://tex.stackexchange.com/questions/83783/explanatory-bubbles-in-beamer
+                                 %              http://tex.stackexchange.com/questions/38805/simple-speech-bubbles-arrows-or-balloon-like-shapes-in-beamer
+\tikzset{
+    invisible/.style={opacity=0,text opacity=0},
+    visible on/.style={alt=#1{}{invisible}},
+    alt/.code args={<#1>#2#3}{%
+      \alt<#1>{\pgfkeysalso{#2}}{\pgfkeysalso{#3}} % \pgfkeysalso doesn't change the path
+    },
+}
+
+\NewDocumentCommand{\mycallout}{r<> O{align=center, fill=cyan!20, opacity=0.8,text opacity=1} m m m m}{%
+  \tikz[remember picture, overlay]
+    \node[text width=#4, #2,visible on=<#1>, rounded corners,
+    draw,rectangle callout,anchor=pointer,callout relative pointer={(#5)}] at (#3) {#6};
+}
+
+
+\newcommand{\tikzmark}[1]{\tikz[overlay,remember picture,baseline=-0.5ex] \node (#1) {};}
+
+% Setup listings
+\lstset{ %
+%   inputencoding=utf8/latin1,
+  %backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}
+  basicstyle=\scriptsize\ttfamily, % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{gray},       % comment style
+  %deletekeywords={...},            % if you want to delete keywords from the given language
+  escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+  %extendedchars=true,              % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+  frame=leftline,                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue},       % keyword style
+  language=C++,                    % the language of the code
+  %morekeywords={*,...},            % if you want to add more keywords to the set
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=6pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{red},    % the style that is used for the line-numbers
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{red},         % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  %title=\lstname,                  % show the filename of files included with \lstinputlisting; also try caption instead of title
+  extendedchars=true,
+  inputencoding=utf8,
+  literate=
+    {á}{{\'a}}1
+    {à}{{\`a}}1
+    {ã}{{\~a}}1
+    {é}{{\'e}}1
+    {ê}{{\^e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {õ}{{\~o}}1
+    {ú}{{\'u}}1
+    {ü}{{\"u}}1
+    {ç}{{\c{c}}}1
+%   literate=%
+%          {á}{{\'a}}1
+%          {í}{{\'i}}1
+%          {é}{{\'e}}1
+%          {ý}{{\'y}}1
+%          {ú}{{\'u}}1
+%          {ó}{{\'o}}1
+%          {ě}{{\v{e}}}1
+%          {š}{{\v{s}}}1
+%          {č}{{\v{c}}}1
+%          {ř}{{\v{r}}}1
+%          {ž}{{\v{z}}}1
+%          {ď}{{\v{d}}}1
+%          {ť}{{\v{t}}}1
+%          {ň}{{\v{n}}}1                
+%          {ů}{{\r{u}}}1
+%          {Á}{{\'A}}1
+%          {Í}{{\'I}}1
+%          {É}{{\'E}}1
+%          {Ý}{{\'Y}}1
+%          {Ú}{{\'U}}1
+%          {Ó}{{\'O}}1
+%          {Ě}{{\v{E}}}1
+%          {Š}{{\v{S}}}1
+%          {Č}{{\v{C}}}1
+%          {Ř}{{\v{R}}}1
+%          {Ž}{{\v{Z}}}1
+%          {Ď}{{\v{D}}}1
+%          {Ť}{{\v{T}}}1
+%          {Ň}{{\v{N}}}1                
+%          {Ů}{{\r{U}}}1  
+}
+
+% Para que o codigo seja exibido com overlay, destacando partes em sequencia
+% http://tex.stackexchange.com/questions/8384/how-to-make-overlay-still-work-inside-lstlisting-environment
+% http://tex.stackexchange.com/questions/100522/highlight-listings-in-beamer
+% http://tex.stackexchange.com/questions/45011/beamer-how-to-do-src-highlighting-when-src-is-split-with-only-command
+\lstdefinestyle{highlight}{
+  basicstyle=\scriptsize\ttfamily\color{black}\colorbox{yellow},
+  commentstyle=\color{gray},
+  keywordstyle=\color{blue},
+  stringstyle=\color{red},
+  backgroundcolor=\color{yellow},
+}
+\lstdefinestyle{overlay}{
+  basicstyle=\scriptsize\ttfamily\color{black!40}, % the size of the fonts that are used for the code
+  breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+  breaklines=true,                 % sets automatic line breaking
+  captionpos=b,                    % sets the caption-position to bottom
+  commentstyle=\color{gray!40},       % comment style
+  escapeinside={(*}{*)},          % if you want to add LaTeX within your code
+  frame=leftline,                   % adds a frame around the code
+  keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+  keywordstyle=\color{blue!40},       % keyword style
+  language=C++,                    % the language of the code
+  numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbersep=6pt,                   % how far the line-numbers are from the code
+  numberstyle=\tiny\color{red},    % the style that is used for the line-numbers
+  stepnumber=1,                    % the step between two line-numbers. If it's 1, each line will be numbered
+  rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+  showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+  showstringspaces=false,          % underline spaces within strings only
+  showtabs=false,                  % show tabs within strings adding particular underscores
+  stringstyle=\color{red!40},         % string literal style
+  tabsize=2,                       % sets default tabsize to 2 spaces
+  moredelim=**[is][\only<+>{\color{black}\lstset{style=highlight}}]{@}{@},
+  moredelim=**[is][\only<1->{\color{black}\lstset{style=highlight}}]{@1}{@},
+  moredelim=**[is][\only<2->{\color{black}\lstset{style=highlight}}]{@2}{@},
+  moredelim=**[is][\only<3->{\color{black}\lstset{style=highlight}}]{@3}{@},
+  moredelim=**[is][\only<4->{\color{black}\lstset{style=highlight}}]{@4}{@},
+  moredelim=**[is][\only<5->{\color{black}\lstset{style=highlight}}]{@5}{@},
+  moredelim=**[is][\only<6->{\color{black}\lstset{style=highlight}}]{@6}{@},
+  moredelim=**[is][\only<7->{\color{black}\lstset{style=highlight}}]{@7}{@},
+  moredelim=**[is][\only<8->{\color{black}\lstset{style=highlight}}]{@8}{@},
+  moredelim=**[is][\only<9->{\color{black}\lstset{style=highlight}}]{@9}{@},
+}
+
+% Listening com destaque para comentarios (NAO ESTA FUNCIONANDO, TENTATIVA NA AULA 04
+\newenvironment{lstlistingCMT}
+  {\begin{lstlisting}[commentstyle=\color{red}\bfseries]}
+  {\end{lstlisting}}
+
+
+% Modificando espaçamento entre itens
+%\newenvironment{myitemize}
+%  {\begin{itemize}\setlength{\itemsep}{0.5\baselineskip}}
+%  {\end{itemize}}
+%
+%\newenvironment{myenumerate}
+%  {\begin{enumerate}\setlength{\itemsep}{0.5\baselineskip}}
+%  {\end{enumerate}}
+
+\newlength{\wideitemsep}
+\setlength{\wideitemsep}{0.5\itemsep}
+\addtolength{\wideitemsep}{6pt}
+\let\olditem\item
+\renewcommand{\item}{\setlength{\itemsep}{\wideitemsep}\olditem}
+
+
+
+% Setup links
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+
+%Equacao bold em section
+\newcommand{\eq}[1]{\texorpdfstring{$#1$}{}}
+
+%Equacao bold fora de section
+\usepackage{bm}
+\newcommand{\eqbf}[1]{$\bm{#1}$} %\(\mathbf{#1}\)
+
+%Alert bold
+\newcommand{\alertbf}[1]{\alert{\textbf{#1}}}
+
+%Inserir link para animação
+\newcommand{\animation}[1]{
+  \vskip5mm
+  \begin{center}
+    \href{#1}{\includegraphics[scale=0.1]{setup/animacao.jpg} \\ \footnotesize{Animação}}
+  \end{center}
+}
+
+%Inserir link para vídeo
+\newcommand{\video}[1]{
+  \vskip5mm
+  \begin{center}
+    \href{#1}{\includegraphics[scale=0.1]{setup/animacao.jpg} \\ \footnotesize{Vídeo}}
+  \end{center}
+}
+
+%Inserir link para animação e vídeo
+\newcommand{\animationvideo}[2]{
+  %\vskip5mm
+  \begin{center}
+    \begin{table}[h]
+      \begin{tabular}{c c}
+        \href{#1}{\includegraphics[scale=0.1]{setup/animacao}} & \href{#2}{\includegraphics[scale=0.1]{setup/animacao}} \\
+        \href{#1}{\footnotesize{Animação}}                  & \href{#2}{\footnotesize{Vídeo}}
+      \end{tabular}
+    \end{table}
+  \end{center}
+}
+
+
+% Tabelas
+\newcommand{\mr}[2]{\multirow{#1}{*}{#2}}
+\newcommand{\mc}[2]{\multicolumn{#1}{|c|}{#2}}
+
+
+
+\institute[UFOP]{
+%  \inst{1}%
+\title[Autor]{ASN}
+
+  Universidade Federal de Ouro Preto, UFOP
+  \vskip0mm
+  Departamento de Computação, DECOM
+%  \vskip3mm
+%   Website: \textbf{www.decom.ufop.br/anascimento}
+  \vskip0mm
+    Professor : \textbf{Anderson Almeida Ferreira}
+  }
+
+% Author, Title, etc.
+\author[psilva]{\textbf{Felipe Braz Marques, Matheus Peixoto Ribeiro Vieira, Pedro Henrique Rabelo Leão de Oliveira}}
+\title[BCC241]{BCC241 - Projeto e Análise de Algoritmos}
+\date{
+% \the\year{}
+\vskip4mm
+\includegraphics[scale=0.5]{setup/logos.jpg}
+}
+
+% Para inserir um frame de conteúdo antes de cada seção
+\AtBeginSection[]{
+    % \begin{frame}\frametitle{Conteúdo}
+    %     \begin{small}
+    %         \tableofcontents[currentsection]%, hideothersubsections] % PROCURAR SOLUCAO PARA APRESENTAR SUBSECOES
+    %     \end{small}
+    % \end{frame}
+    \begin{frame}
+        \vfill
+        \centering
+            \begin{beamercolorbox}[sep=8pt,center,shadow=true,rounded=true]{title}
+            \usebeamerfont{title}\insertsectionhead\par%
+        \end{beamercolorbox}
+        \vfill
+    \end{frame}
+}
+
+\newcommand{\begindocument}[1]{
+  {\setbeamertemplate{footline}{} % Para não colocar rodapé na primeira página
+  \begin{frame}[plain]%para não colocar barra de navegação na primeira página
+    \titlepage
+  \end{frame}
+  }
+  #1
+  \begin{frame}{Conteúdo}
+    \begin{small}
+        \tableofcontents
+    \end{small}
+  \end{frame}
+}

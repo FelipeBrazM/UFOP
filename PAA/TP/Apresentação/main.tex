@@ -1,0 +1,339 @@
+\documentclass[compress,aspectratio=169]{beamer}
+\usepackage{ragged2e}
+\usepackage{underscore}
+%Setup File
+\input{setup/setup}
+\addbibresource{setup/refs.bib}
+
+
+\subtitle[PAA]  {Clique, Conjunto Independente e SAT}
+\begin{document}
+\begindocument
+
+\section{Clique}
+    \begin{frame}{Problema do Clique}
+        \begin{justify}
+            Dado um grafo, o objetivo é encontrar um conjunto máximo de vértices tal que todas as possíveis arestas entre eles estejam presentes. Para isso, foi utilizado a estratégia \textit{branch and bound} para encontrar a solução do problema.
+        \end{justify}
+    \end{frame}
+    
+    \begin{frame}{Definição do problema}
+        \begin{itemize}
+            \item \textbf{Variáveis para a solução:} \(X_1, \dots, X_n\), onde \(X_i\) representa um vértice pertencente ao grafo.
+            \item \textbf{Domínio para as variáveis da solução:} \{0, 1\}, onde 0 indica que aquele vértice não faz parte do clique máximo e 1 indica o contrário.
+            \item \textbf{Restrições:} Todos os vértices representados pelas variáveis que possuem valor 1 devem estar conectados entre si através de uma aresta.
+            \item \textbf{Objetivo:} Obter o maior conjunto possível de vértices tal que todas as possíveis arestas entre eles estejam presentes.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}{Leitura do Problema}
+        \begin{itemize}
+            \item O problema foi lido e armazenado em uma única variável, contendo o número de vértices e a matriz de adjacência do grafo.
+            \item O vetor que armazena a solução inicial foi iniciado com todas as posições possuindo valores -1, para representar que a mesma começa vazia.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Geração Inicial da Melhor Solução}
+        \begin{lstlisting}
+def geraSolucao(problema):
+    solucao = [0] * problema[0][0]
+
+    for i in range(problema[0][0]):
+        for j in range(problema[0][0]):
+            if(problema[i+1][j] == 1):
+                solucao[i] = 1
+                solucao[j] = 1
+                return solucao
+
+    solucao[0] = 1
+    return solucao
+        \end{lstlisting}
+    \end{frame}
+    
+    \begin{frame}[fragile]{Função que executa o branch and bound}
+        \begin{lstlisting}
+def branchAndBoundClique(solucao, i, problema, melhor):
+    if eCompleta(solucao):
+        melhor[:] = solucao
+        return melhor
+    
+    else:
+        for j in range(2):
+            solucao[i] = j
+            
+            if(eConsistente(solucao, problema, i) and ePromissora(solucao, problema, melhor, i)):
+                melhor = branchAndBoundClique(solucao, i+1, problema, melhor)
+            
+            solucao[i] = -1
+        
+        return melhor
+        \end{lstlisting}
+    \end{frame}
+
+    \begin{frame}[fragile]{Função que verifica a consistência da solução}
+        \begin{lstlisting}
+def eConsistente(solucao, problema, i):
+    verticesNaSolucao = []
+    
+    for j in range(i+1):
+        if solucao[j] == 1:
+            verticesNaSolucao.append(j)
+
+    for j in range(len(verticesNaSolucao)-1):
+        for k in range(j+1, len(verticesNaSolucao)):
+            if(problema[verticesNaSolucao[j]+1][verticesNaSolucao[k]] == 0):
+                return False
+            
+    return True 
+        \end{lstlisting}
+    \end{frame}
+
+    \begin{frame}[fragile]{Função que verifica se a solução é promissora}
+        \begin{lstlisting}
+def ePromissora(solucao, problema, melhor, i):
+    numVerticesMelhor = sum(melhor)
+    numVerticesMaximoSolucao = 0 # armazena o numero maximo de vertices possiveis nessa solucao
+    
+    for j in range(i+1):
+        numVerticesMaximoSolucao += solucao[j]
+
+    numVerticesMaximoSolucao += (problema[0][0] - (i+1))
+    
+    return numVerticesMaximoSolucao > numVerticesMelhor
+        \end{lstlisting}
+    \end{frame}
+
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.65\textwidth]{images/grafo_instancia1.png}
+            \caption{Grafo da instância de entrada.}
+            \label{fig:instancia1Clique}
+        \end{figure}
+    \end{frame} 
+
+    \begin{frame}
+        \begin{tcolorbox}[title=Saída da instância de entrada, width=\linewidth, 
+          fontupper=\ttfamily, 
+          halign=flush left]
+            [0, 0, 0, 0, 0, 0, 1, 1, 1] \\
+            Vértices presentes no clique: \\
+            7 \\
+            8 \\
+            9 \\
+            Tempo de execução: 0.001000 segundos \\
+        \end{tcolorbox}
+    \end{frame}
+
+\section{Conjunto Independente}
+    \begin{frame}{O problema do Conjunto Independente}
+    \begin{justify}
+        Para resolver o problema do Conjunto Independente (ou Conjunto Estável) por meio de uma redução polinomial ao problema do Clique, iremos usar a relação entre esses dois problemas. Sabemos que um conjunto independente de um grafo é equivalente a um clique no complemento desse grafo.
+    \end{justify}
+    \end{frame}
+
+    \begin{frame}{Passos para a solução}
+        \begin{itemize}
+            \item \textbf{Complemento do grafo:} O complemento de um grafo é um grafo onde as arestas que estavam presentes no grafo original são removidas e as arestas que não estavam presentes são adicionadas.
+            \item \textbf{Redução:} Dado um grafo GGG, o problema do conjunto independente em GGG pode ser resolvido encontrandoo o clique máximo no complemento do grafo G'G'G'.
+            \item \textbf{Aproveitar a implementação do clique:} Após calcular o complemento do grafo, aplicamos o algoritmo de clique já implementado.\\
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Função geraComplemento}
+        \begin{lstlisting}
+def geraComplemento(problema):
+    numVertices = problema[0][0]  # Numero de vertices (primeira linha da matriz)
+    
+    # Inicializa a matriz de complemento
+    complemento = [[0] * numVertices for _ in range(numVertices)]
+    
+    # Preenche a matriz de complemento
+    for i in range(numVertices):
+        for j in range(numVertices):
+            if i != j:  # Nao considerar a diagonal principal
+                complemento[i][j] = 1 - problema[i + 1][j]
+    
+    # Adiciona o numero de vertices como a primeira linha da matriz de complemento
+    complemento.insert(0, [numVertices])
+    
+    return complemento
+        \end{lstlisting}
+    \end{frame}
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.65\textwidth]{images/grafo_instancia1.png}
+            \caption{Grafo da instância de entrada.}
+            \label{fig:instancia1}
+        \end{figure}
+    \end{frame} 
+
+    \begin{frame}
+        \begin{figure}[H]
+            \centering
+            \includegraphics[width=0.65\textwidth]{images/conj_instancia1.png}
+            \caption{Grafo complemento da instância de entrada.}
+            \label{fig:instancia2}
+        \end{figure}
+    \end{frame}
+    
+    \begin{frame}{Saída}
+        \begin{tcolorbox}[title=Saída da instância, width=\linewidth, 
+          fontupper=\ttfamily, 
+          halign=flush left]
+            Conjunto independente máximo: {1, 2, 4, 6, 9}\\
+            Tempo de execução: 0.002493 segundos\\
+        \end{tcolorbox}
+    \end{frame}
+
+\section{SAT}
+    \begin{frame}{O problema SAT}
+        \begin{justify}
+            Dada uma fórmula booleana na forma normal conjuntiva, é necessário encontrar, com \textit{backtracking}, algum resultado que satisfaça a mesma. 
+            Caso não seja possível, informa tal possibilidade
+        \end{justify}
+    \end{frame}
+    \begin{frame}{Definição do problema}
+        \begin{itemize}
+            \item \textbf{Variáveis para a solução:} \(X_1, \dots, X_n\), onde \(X_i\) indica o valor verdade para determinada variável do problema;
+            \item \textbf{Domínio para as variáveis da solução:} \{False, True\};
+            \item \textbf{Restrições:} Todas as cláusulas devem resultar em verdadeiro
+            \item \textbf{Objetivo:} Obter algum conjunto de valores do domínio para as variáveis de forma que todas as cláusulas sejam satisfeitas
+        \end{itemize}
+    \end{frame}
+    \begin{frame}{Entrada}
+        \[(A \lor \neg B \lor C) \land (\neg A \lor B \lor D) \land (B \lor \neg C \lor \neg D) \land (\neg A \lor \neg B \lor D)\]
+        \begin{tcolorbox}[title=Arquivo de entrada para a fórmula, width=\linewidth, fontupper=\ttfamily, halign=flush left]
+            4 \\
+            1 0 1 -1 \\
+            0 1 -1 1 \\
+            -1 1 0 0 \\
+            0 0 -1 1
+        \end{tcolorbox}
+    \end{frame}
+
+    \begin{frame}[fragile]{Backtracking}
+        \begin{lstlisting}
+def backtrack(solucao, i, problema):
+    dominio = [False, True]
+    if verificar_solucao(problema, solucao):
+        return True
+    else:
+        i = i + 1
+        candidatos = construir_candidatos(solucao, i, problema, dominio)
+        for c in candidatos:
+            solucao[i-1] = c
+            finished = backtrack(solucao, i, problema)
+            if finished:
+                return True
+            solucao[i-1] = None
+    return False
+        \end{lstlisting}
+    \end{frame}
+
+    \begin{frame}{Construir candidatos}
+        \begin{itemize}
+            \item Iterar sobre cada valor do domínio e colocá-lo na solução
+            \item Verificar cada cláusula do problema
+            \item Verificar se as variáveis já atribuídas compõem a cláusula
+            \item Se comporem, verificar se a cláusula é satisfeita. 
+            \item Se todas as cláusulas forem satisfeitas, o valor pode ser suficiente.
+            \item Se uma cláusula não for, tal valor do domínio não poderá participar da solução.
+        \end{itemize}
+    \end{frame}
+
+    \begin{frame}[fragile]{Construir candidatos}
+        \begin{lstlisting}
+def construir_candidatos(solucao, i, problema, dominio):
+    if i > len(solucao): return []
+    candidatos = dominio.copy()
+    s_temp = solucao.copy()
+    qtd_variaveis = len(problema[0])
+    for c in dominio:
+        s_temp[i-1] = c
+        for clausula in problema:
+            satisfeita = False  
+            if clausula_computavel(i, clausula, qtd_variaveis):
+                for variavel_atual, literal in enumerate(clausula):
+                    if literal == 1:
+                        satisfeita = satisfeita or s_temp[variavel_atual]
+                    elif literal == 0:
+                        satisfeita = satisfeita or not s_temp[variavel_atual]
+            else:continue
+            if not satisfeita:
+                candidatos.remove(c)
+                break
+    return candidatos
+        \end{lstlisting}
+    \end{frame}
+
+    \begin{frame}[fragile]{Cláusula computável}
+        \begin{itemize}
+            \item A cláusula a seguir não poderá ser computável.
+            \item Estamos analisando o valor do True e a cláusula ficará falsa.
+            \item Não sabemos se ela será verdadeira ou falsa no fim do processamento.
+        \end{itemize}
+        \begin{tcolorbox}[width=\linewidth, fontupper=\ttfamily,  halign=flush left]
+            Cláusula: 1 -1 0 0 1 \newline 
+            Solução: [False, False, True, \_, \_] \newline
+            i = 3
+        \end{tcolorbox}
+        \begin{lstlisting}
+def clausula_computavel(i, clausula, qtd_variaveis):  
+    for j in range(i, qtd_variaveis):
+        if clausula[j-1] == -1:
+            return False
+    return True
+        \end{lstlisting}
+    \end{frame}
+
+
+    \begin{frame}{Exemplo instância}
+        \[(A \lor B \lor C) \land (A \lor \neg B) \land (B \lor \neg C) \land (\neg A \lor C) \land (\neg A \lor \neg B \lor \neg C)\]
+        
+        \begin{tcolorbox}[title=Saída da instância, width=\linewidth, fontupper=\ttfamily, halign=flush left]
+            Solução não encontrada \\
+            Tempo de execução: 0.008312 segundos  
+        \end{tcolorbox}
+    \end{frame}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{frame}{Exemplo instância}
+        \begin{center}
+            \((A \lor B \lor C) \land (\neg A \lor \neg B \lor \neg C) \land (A \lor \neg B \lor D) \land (\neg A \lor B \lor \neg D) \land (A \lor \neg C \lor D) \land \)
+
+            \((\neg A \lor C \lor \neg D) \land (\neg A \lor \neg B \lor C \lor D) \land (A \lor B \lor \neg C \lor \neg D)\)
+            
+        \end{center}
+        
+        \begin{tcolorbox}[title=Saída da instância, width=\linewidth, fontupper=\ttfamily, halign=flush left]
+            Solução encontrada: [True, False, False, False] \\
+            Tempo de execução: 0.000695 segundos
+        \end{tcolorbox}
+    \end{frame}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{frame}{Exemplo instância}
+        \begin{tcolorbox}[title=Entrada da instância, width=\linewidth, fontupper=\ttfamily,  halign=flush left]
+            Variáveis: 18 \\
+            Cláusulas: 4096
+        \end{tcolorbox}
+        \begin{tcolorbox}[title=Saída da instância, width=\linewidth, fontupper=\ttfamily, halign=flush left]
+            Solução encontrada: [False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, False, False] \\
+            Tempo de execução: 0.168715 segundos
+        \end{tcolorbox}
+    \end{frame}
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    \begin{frame}{Exemplo instância}
+        \begin{tcolorbox}[title=Entrada da instância, width=\linewidth, fontupper=\ttfamily,  halign=flush left]
+            Variáveis: 10 \\
+            Cláusulas: 59049
+        \end{tcolorbox}
+        \begin{tcolorbox}[title=Saída da instância, width=\linewidth, fontupper=\ttfamily, halign=flush left]
+            Solução não encontrada \\
+            Tempo de execução: 0.205896 segundos
+        \end{tcolorbox}
+    \end{frame}
+
+
+
+\end{document}
