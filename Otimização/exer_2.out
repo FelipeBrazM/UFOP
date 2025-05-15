@@ -1,0 +1,35 @@
+Problem:    exer_2
+Rows:       4
+Columns:    4 (4 integer, 0 binary)
+Non-zeros:  14
+Status:     INTEGER OPTIMAL
+Objective:  lucro = 17480 (MAXimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 lucro                   17480                             
+     2 disp_mat_prima[1]
+                                 248                         250 
+     3 disp_mat_prima[2]
+                                  61                         600 
+     4 disp_mat_prima[3]
+                                 500                         500 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[1]         *            126             0               
+     2 x[2]         *             61             0               
+     3 x[3]         *              0             0               
+     4 x[4]         *              0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output
